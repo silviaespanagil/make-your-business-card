@@ -13,5 +13,47 @@
         font-size: 12px;
         text-transform: uppercase;
         line-height: 20px;
+        margin-bottom: 20px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: $colorWhite;
+        &-data {
+            margin: 21px 14px 10px 0;
+            padding-left: 15px;
+            border-left: 5px solid $colorBlue;
+            font-family: $fontMontserrat;
+            &--name {
+                color: $colorDarkblue;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 20px;
+            }
+            &--jobTitle {
+                color: $colorGray;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        &-image {
+            height: 200px;
+            object-fit: cover;
+        }
+        &-socials {
+            display: flex;
+            padding: 10px 0 12px 20px;
+
+            &--items {
+                display: block;
+                width: 32px;
+                height: 32px;
+                text-align: center;
+                margin-right: 10px;
+                border: 2px solid $colorLightGreen;
+                border-radius: 100%;
+            }
+        }
     }
 }

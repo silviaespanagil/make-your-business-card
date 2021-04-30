@@ -1,0 +1,17 @@
+.preview {
+    width: 100%;
+    background: linear-gradient($colorLightBlue, $colorLightGray);
+    padding: 38px 35px 40px 45px;
+    &__reset {
+        width: 75px;
+        height: 30px;
+        background-color: $colorLightBlue;
+        border: 1px solid $colorWhite;
+        border-radius: 15px;
+        color: $colorGray;
+        font-family: $fontOpenSans;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 20px;
+    }
+}

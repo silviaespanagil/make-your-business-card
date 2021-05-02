@@ -1,0 +1,44 @@
+.collapsable {
+  margin: 30px 20px;
+  .collapsable-design {
+    border-bottom: 2px solid $colorWhite-two;
+    color: $colorGray;
+    text-transform: uppercase;
+    &__menu {
+      display: grid;
+      grid-template-columns: 21px 1fr 16px;
+      grid-template-rows: 24px;
+      align-items: center;
+
+      font-size: 1.125rem;
+      .far {
+        color: $colorOrange;
+      }
+      &--title {
+        margin-left: 10px;
+
+        font-family: $fontOpenSans;
+        font-weight: 600;
+        font-size: 1.125rem;
+      }
+    }
+    &__colors {
+      padding: 22px 0px 30px 0px;
+      display: flex;
+      justify-content: space-between;
+      &--title {
+        font-size: 0.875rem;
+        font-family: $fontOpenSans;
+        padding-left: 19px;
+      }
+      &--item {
+        display: block;
+        width: 90px;
+        height: 25px;
+        .item__color1 {
+          background-color: $colorDarkblue;
+        }
+      }
+    }
+  }
+}

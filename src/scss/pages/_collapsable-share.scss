@@ -1,0 +1,47 @@
+.collapsable {
+  margin: 30px 20px;
+  .collapsable-share {
+    border-bottom: 2px solid $colorWhite-two;
+    margin-top: 10px;
+    color: $colorGunMetal;
+    text-transform: uppercase;
+    &__menu {
+      display: grid;
+      grid-template-columns: 21px 1fr 16px;
+      grid-template-rows: 24px;
+      align-items: center;
+
+      font-size: 1.125rem;
+      .fa-share-alt {
+        color: $colorDullOrange;
+      }
+      &--title {
+        margin-left: 10px;
+
+        font-family: $fontOpenSans;
+        font-weight: 600;
+        font-size: 1.125rem;
+      }
+    }
+    &__button {
+      display: block;
+      margin: 30px auto;
+      color: $colorWhite;
+      background: $colorDullOrange;
+      border-radius: 12px;
+      padding: 13px 18px;
+
+      text-transform: uppercase;
+      font-family: $fontOpenSans;
+      font-weight: 600;
+      font-size: 1.125rem;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      &:active {
+        background: $colorWhite-two;
+      }
+      .fa-address-card {
+        margin-right: 9px;
+      }
+    }
+  }
+}

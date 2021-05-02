@@ -1,0 +1,26 @@
+@import "../core/variables";
+
+.landing {
+  background-color: #f5f5f5;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    &--awesome-logo {
+      width: 250px;
+      height: 63px;
+    }
+  }
+  //footer
+  &__footer {
+    background-color: $colorWhite;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &--logo {
+      width: 103px;
+      height: 40px;
+    }
+  }
+}

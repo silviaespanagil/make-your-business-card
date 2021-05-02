@@ -2,7 +2,7 @@
   margin: 30px 20px;
   .collapsable-design {
     border-bottom: 2px solid $colorWhite-two;
-    color: $colorGray;
+    color: $colorGunMetal;
     text-transform: uppercase;
     &__menu {
       display: grid;
@@ -12,7 +12,7 @@
 
       font-size: 1.125rem;
       .far {
-        color: $colorOrange;
+        color: $colorDullOrange;
       }
       &--title {
         margin-left: 10px;
@@ -31,12 +31,42 @@
         font-family: $fontOpenSans;
         padding-left: 19px;
       }
-      &--item {
-        display: block;
-        width: 90px;
-        height: 25px;
-        .item__color1 {
-          background-color: $colorDarkblue;
+      .palette {
+        display: flex;
+        align-items: center;
+        &__square {
+          display: flex;
+          &--color {
+            width: 30px;
+            height: 25px;
+          }
+        }
+        .palette-1 .color-1 {
+          background-color: $colorDarkGreenBlue;
+        }
+        .palette-1 .color-2 {
+          background-color: $colorDirtyBlue;
+        }
+        .palette-1 .color-3 {
+          background-color: $colorHospitalGreen;
+        }
+        .palette-2 .color-1 {
+          background-color: $colorDarkGreenBlue;
+        }
+        .palette-2 .color-2 {
+          background-color: $colorDarkGreenBlue;
+        }
+        .palette-2 .color-3 {
+          background-color: $colorDarkGreenBlue;
+        }
+        .palette-3 .color-1 {
+          background-color: $colorDarkGreenBlue;
+        }
+        .palette-3 .color-2 {
+          background-color: $colorDarkGreenBlue;
+        }
+        .palette-3 .color-3 {
+          background-color: $colorDarkGreenBlue;
         }
       }
     }

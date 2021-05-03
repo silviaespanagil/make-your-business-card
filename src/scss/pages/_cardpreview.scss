@@ -1,59 +1,59 @@
 .preview {
-    width: 100%;
-    background: linear-gradient($colorLightBlue, $colorLightGray);
-    padding: 38px 35px 40px 45px;
-    &__reset {
-        width: 75px;
-        height: 30px;
-        background-color: $colorLightBlue;
-        border: 1px solid $colorWhite;
-        border-radius: 15px;
-        color: $colorGray;
-        font-family: $fontOpenSans;
-        font-size: 12px;
-        text-transform: uppercase;
+  width: 100%;
+  background: linear-gradient($colorSilver, $colorPaleGrey);
+  padding: 38px 35px 40px 45px;
+  &__reset {
+    width: 75px;
+    height: 30px;
+    background-color: $colorSilver;
+    border: 1px solid $colorWhite;
+    border-radius: 15px;
+    color: $colorGunMetal;
+    font-family: $fontOpenSans;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorWhite;
+    &-data {
+      margin: 21px 14px 10px 0;
+      padding-left: 15px;
+      border-left: 5px solid $colorDirtyBlue;
+      font-family: $fontMontserrat;
+      &--name {
+        color: $colorDarkGreenBlue;
+        font-weight: bold;
+        font-size: 18px;
         line-height: 20px;
-        margin-bottom: 20px;
+      }
+      &--jobTitle {
+        color: $colorGunMetal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
-    &__card {
-        display: flex;
-        flex-direction: column;
-        background-color: $colorWhite;
-        &-data {
-            margin: 21px 14px 10px 0;
-            padding-left: 15px;
-            border-left: 5px solid $colorBlue;
-            font-family: $fontMontserrat;
-            &--name {
-                color: $colorDarkblue;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 20px;
-            }
-            &--jobTitle {
-                color: $colorGray;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-            }
-        }
-        &-image {
-            height: 200px;
-            object-fit: cover;
-        }
-        &-socials {
-            display: flex;
-            padding: 10px 0 12px 20px;
+    &-image {
+      height: 200px;
+      object-fit: cover;
+    }
+    &-socials {
+      display: flex;
+      padding: 10px 0 12px 20px;
 
-            &--items {
-                display: block;
-                width: 32px;
-                height: 32px;
-                text-align: center;
-                margin-right: 10px;
-                border: 2px solid $colorLightGreen;
-                border-radius: 100%;
-            }
-        }
+      &--items {
+        display: block;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-right: 10px;
+        border: 2px solid $colorHospitalGreen;
+        border-radius: 100%;
+      }
     }
+  }
 }

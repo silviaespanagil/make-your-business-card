@@ -1,0 +1,105 @@
+.collapsable-fill-section {
+  background-color: $colorWhite;
+}
+.container-fill {
+  margin: 0 20px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+}
+.container-fill-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: $colorGray;
+  font-family: $fontOpenSans;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.fill {
+  border-top: 1px solid #d8d8d8;
+  margin-top: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.keyBoard {
+  width: 21px;
+  height: 18px;
+  text-align: center;
+  font-size: 18px;
+  color: $colorOrange;
+  margin-top: 13px;
+  margin-bottom: 28px;
+  margin-right: 10px;
+}
+/*.up-down {
+  display: block;
+  width: 16px;
+  height: 18px;
+}*/
+.arrowUp {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 13px;
+  width: 16px;
+  height: 18px;
+  text-align: center;
+  font-size: 18px;
+  color: $colorGray;
+  margin-bottom: 28px;
+}
+.label {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: $colorDarkblue;
+  font-family: $fontOpenSans;
+  margin-bottom: 7px;
+}
+.label:first-letter {
+  text-transform: uppercase;
+}
+.input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #a2deaf;
+  margin-bottom: 20px;
+}
+.input::placeholder {
+  color: #c5c5c5;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 7px;
+}
+.image-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.button {
+  width: 140px;
+  height: 30px;
+  background-color: $colorOrange;
+  border: none;
+  border-radius: 3px;
+  font-family: $fontOpenSans;
+  color: $colorWhite;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  box-shadow: grey;
+}
+.input-preview {
+  display: inline-block;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #a2deaf;
+}
+
+@media all and (min-width: 768px) {
+}

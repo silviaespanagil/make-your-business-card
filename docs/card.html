@@ -17,7 +17,14 @@
     <title>Awesome Profile Cards Landing</title>
   </head>
   <body>
-    
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/images/tarjetas-molonas-large.png"
+        alt="Tarjetas molonas"
+      />
+    </header>
+
     <section class= "preview">
         <button class="preview__reset"> 
           <span class="far fa-trash-alt"></span>
@@ -79,7 +86,88 @@
         </div>
       </section>
 
-      
+      <section class="collapsable-fill-section">
+        <div class="container-fill">
+          <div class="fill">
+            <i class="far fa-keyboard keyBoard"></i>
+            <h1 class="container-fill-title">rellena</h1>
+            <a class="up-down" href=""><i class="fas fa-chevron-up arrowUp"></i></a>
+          </div>
+
+          <form class="form" action="https://formspree.io/f/xyylkpnp" method="post">
+            <label class="label" for="name">nombre completo</label>
+            <input
+              class="input"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ej: Sally Jill"
+              required
+            />
+            <label class="label" for="job">puesto</label>
+            <input
+              class="input"
+              id="job"
+              type="text"
+              name="job"
+              placeholder="Ej: Front-end unicorn"
+              required
+            />
+            <label class="label" for="image">imagen de perfil</label>
+            <div class="image-button">
+              <a href="">
+                <input
+                  class="button"
+                  id="image"
+                  type="button"
+                  value="Añadir imagen"
+                  name="image"
+              /></a>
+              <input
+                class="input-preview"
+                id="image"
+                type="input"
+                name="input-preview"
+              />
+            </div>
+            <label class="label" for="email">email</label>
+            <input
+              class="input"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ej: sally-hill@gmail.com"
+              required
+            />
+            <label class="label" for="telephone">teléfono</label>
+            <input
+              class="input"
+              id="telephone"
+              type="tel"
+              name="telephone"
+              placeholder="Ej: 555-55-55-55"
+              required
+            />
+            <label class="label" for="linkedin">linkedin</label>
+            <input
+              class="input"
+              id="linkedin"
+              type="url"
+              name="linkedin"
+              placeholder="Ej: linkedin.com/in/sally.hill"
+            />
+            <label class="label" for="github">github</label>
+            <input
+              class="input"
+              id="github"
+              type="url"
+              name="github"
+              placeholder="Ej: @sally-hill"
+            />
+          </form>
+        </div>
+      </section>
+
       <section class="collapsable-share">
         <div class="collapsable-share__menu">
           <i class="fas fa-share-alt"></i>

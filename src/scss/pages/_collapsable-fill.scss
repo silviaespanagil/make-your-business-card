@@ -2,24 +2,24 @@
   background-color: $colorWhite;
 }
 .container-fill {
-  margin: 0 20px 0;
+  /*margin: 0 20px 0;*/
   padding-bottom: 10px;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid $colorWhite-two;
   display: flex;
   flex-direction: column;
 }
 .container-fill-title {
   text-transform: uppercase;
   font-size: 18px;
-  color: $colorGray;
+  color: $colorGunMetal;
   font-family: $fontOpenSans;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 25px;
 }
 .fill {
-  border-top: 1px solid #d8d8d8;
-  margin-top: 61px;
+  border-top: 1px solid $colorWhite-two;
+  /*margin-top: 61px;*/
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -29,7 +29,7 @@
   height: 18px;
   text-align: center;
   font-size: 18px;
-  color: $colorOrange;
+  color: $colorDullOrange;
   margin-top: 13px;
   margin-bottom: 28px;
   margin-right: 10px;
@@ -48,14 +48,14 @@
   height: 18px;
   text-align: center;
   font-size: 18px;
-  color: $colorGray;
+  color: $colorGunMetal;
   margin-bottom: 28px;
 }
 .label {
   display: block;
   font-size: 14px;
   line-height: 20px;
-  color: $colorDarkblue;
+  color: $colorDarkGreenBlue;
   font-family: $fontOpenSans;
   margin-bottom: 7px;
 }
@@ -65,7 +65,7 @@
 .input {
   width: 100%;
   height: 30px;
-  border: 1px solid #a2deaf;
+  border: 1px solid $colorHospitalGreen;
   margin-bottom: 20px;
 }
 .input::placeholder {
@@ -83,7 +83,7 @@
 .button {
   width: 140px;
   height: 30px;
-  background-color: $colorOrange;
+  background-color: $colorDullOrange;
   border: none;
   border-radius: 3px;
   font-family: $fontOpenSans;
@@ -91,14 +91,13 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  box-shadow: grey;
 }
 .input-preview {
   display: inline-block;
   margin-left: 20px;
   width: 30px;
   height: 30px;
-  border: 1px solid #a2deaf;
+  border: 1px solid $colorHospitalGreen;
 }
 
 @media all and (min-width: 768px) {

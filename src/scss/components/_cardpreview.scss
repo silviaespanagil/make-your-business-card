@@ -1,7 +1,9 @@
 .preview {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background: linear-gradient($colorSilver, $colorPaleGrey);
-  padding: 38px 35px 40px 45px;
+  padding: 38px 45px 40px 35px;
   &__reset {
     width: 75px;
     height: 30px;
@@ -16,6 +18,8 @@
     margin-bottom: 20px;
   }
   &__card {
+    width: 240px;
+    height: 329px;
     display: flex;
     flex-direction: column;
     background-color: $colorWhite;

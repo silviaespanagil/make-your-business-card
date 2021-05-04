@@ -3,8 +3,7 @@
   flex-direction: column;
   background: linear-gradient($colorSilver, $colorPaleGrey);
   padding: 38px 45px 40px 35px;
-  @include tablet() {
-  }
+
   &__reset {
     width: 75px;
     height: 30px;

@@ -15,9 +15,10 @@
     &--title {
       margin-left: 10px;
 
-      font-family: $fontOpenSans;
+      /*font-family: $fontOpenSans;
       font-weight: 600;
-      font-size: 1.125rem;
+      font-size: 1.125rem;*/
+      @include menu-title;
       text-transform: uppercase;
     }
   }

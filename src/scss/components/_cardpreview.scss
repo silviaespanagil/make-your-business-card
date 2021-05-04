@@ -7,6 +7,11 @@
   @include tablet() {
     width: 100%;
     margin: 20px 40px 20px 30px;
+    padding-top: 173px;
+    border-radius: 6px;
+  }
+  @include desktop() {
+    border-radius: 15px;
   }
 
   &__reset {
@@ -21,8 +26,8 @@
     text-transform: uppercase;
     line-height: 20px;
     margin-bottom: 20px;
-    @include tablet() {
-    }
+    /*position: relative;
+    left: -20%;*/
   }
 
   &__card {
@@ -70,6 +75,7 @@
         border: 2px solid $colorHospitalGreen;
         color: $colorDarkGreenBlue;
         border-radius: 100%;
+        font-size: 18px;
       }
     }
   }

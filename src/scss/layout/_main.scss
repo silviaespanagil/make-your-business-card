@@ -1,0 +1,8 @@
+.collapsable {
+  padding: 30px 20px;
+  background: linear-gradient(to bottom, $colorWhiteFour, $colorWhite 9%);
+  /*@include tablet() {
+    order: -1;
+    max-width: 400px;
+  }*/
+}

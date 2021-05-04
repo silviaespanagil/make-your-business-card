@@ -43,15 +43,19 @@
     }
     &-socials {
       display: flex;
+      align-items: center;
       padding: 10px 0 12px 20px;
 
       &--items {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 32px;
         height: 32px;
         text-align: center;
         margin-right: 10px;
         border: 2px solid $colorHospitalGreen;
+        color: $colorDarkGreenBlue;
         border-radius: 100%;
       }
     }

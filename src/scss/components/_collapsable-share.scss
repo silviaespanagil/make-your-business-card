@@ -64,7 +64,10 @@
         font-size: 0.75rem;
         font-weight: 600;
         white-space: nowrap;
-        margin-left: -10px;
+
+        @media (max-width: 340px) {
+          margin-left: -10px;
+        }
       }
       &--button {
         background: $colorAzure;

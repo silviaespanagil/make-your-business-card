@@ -1,10 +1,19 @@
 .preview {
-  display: flex;
-  flex-direction: column;
   background: linear-gradient($colorSilver, $colorPaleGrey);
   padding: 38px 45px 40px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include tablet() {
+    width: 100%;
+    margin: 20px 40px 20px 30px;
+    padding-top: 173px;
+    border-radius: 6px;
   }
+  @include desktop() {
+    border-radius: 15px;
+  }
+
   &__reset {
     width: 75px;
     height: 30px;
@@ -17,10 +26,13 @@
     text-transform: uppercase;
     line-height: 20px;
     margin-bottom: 20px;
+    /*position: relative;
+    left: -20%;*/
   }
+
   &__card {
     width: 240px;
-    height: 329px;
+    max-height: 329px;
     display: flex;
     flex-direction: column;
     background-color: $colorWhite;
@@ -63,6 +75,7 @@
         border: 2px solid $colorHospitalGreen;
         color: $colorDarkGreenBlue;
         border-radius: 100%;
+        font-size: 18px;
       }
     }
   }

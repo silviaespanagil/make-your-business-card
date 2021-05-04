@@ -1,8 +1,13 @@
-.collapsable {
-  padding: 30px 20px;
+.main {
   background: linear-gradient(to bottom, $colorWhiteFour, $colorWhite 9%);
-  /*@include tablet() {
+  @include tablet() {
+    display: flex;
+  }
+  .collapsable {
+    padding: 30px 20px;
     order: -1;
-    max-width: 400px;
-  }*/
+    @include tablet() {
+      max-width: 400px;
+    }
+  }
 }

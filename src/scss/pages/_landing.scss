@@ -2,35 +2,45 @@
 
 .landing {
   background-color: $colorWhiteFour;
-
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    &--awesome-logo {
-      width: 250px;
-      height: 63px;
-    }
-  }
   &__main {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    &--subtitle {
-      text-align: center;
+    height: 458px;
+
+    &-header {
+      width: 250px;
+      height: 63px;
+      margin-top: 95px;
+      margin-bottom: 35.4px;
     }
-  }
-  //footer
-  &__footer {
-    background-color: $colorWhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    &--logo {
-      width: 103px;
-      height: 40px;
+    &-title {
+      color: $colorDullOrange;
+      font-size: 19.2px;
+      font-weight: 900;
+      font-family: $fontOpenSans;
+      //   width: 264.8px;
+      //   height: 38.4px;
+    }
+    &-subtitle {
+      text-align: center;
+      color: $colorDarkGreenBlue;
+      font-size: 12.8px;
+      font-weight: normal;
+      margin-bottom: 17.8px;
+      font-family: $fontOpenSans;
+      width: 264.8px;
+    }
+    &-menu {
+      display: flex;
+      flex-direction: row;
+      &-fa-object-ungroup {
+        margin-left: 5px;
+      }
     }
   }
 }
+// .central-column {
+//   margin: 0 35px;
+// }

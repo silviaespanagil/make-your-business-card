@@ -1,0 +1,87 @@
+.main {
+  @include tablet() {
+    display: flex;
+  }
+  .collapsable {
+    padding: 30px 20px;
+    background: linear-gradient(to bottom, $colorWhiteFour, $colorWhite 9%);
+    @include tablet() {
+      order: -1;
+    }
+    .collapsable-design {
+      border-bottom: 1px solid $colorWhite-two;
+      color: $colorGunMetal;
+      text-transform: uppercase;
+      &__menu {
+        display: grid;
+        grid-template-columns: 21px 1fr 16px;
+        grid-template-rows: 24px;
+        align-items: center;
+
+        font-size: 1.125rem;
+        .far {
+          color: $colorDullOrange;
+        }
+        &--title {
+          margin-left: 10px;
+
+          font-family: $fontOpenSans;
+          font-weight: 600;
+          font-size: 1.125rem;
+        }
+      }
+      &__colors {
+        padding: 22px 0px 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        &--title {
+          margin-top: -6px;
+          font-size: 0.875rem;
+          font-weight: normal;
+          font-family: $fontOpenSans;
+          padding-left: 19px;
+        }
+        .palette {
+          display: flex;
+          align-items: center;
+          padding-bottom: 20px;
+          &__square {
+            display: flex;
+            padding-left: 10px;
+            &--color {
+              width: 30px;
+              height: 25px;
+            }
+          }
+          .palette-1 .color-1 {
+            background-color: $colorDarkGreenBlue;
+          }
+          .palette-1 .color-2 {
+            background-color: $colorDirtyBlue;
+          }
+          .palette-1 .color-3 {
+            background-color: $colorHospitalGreen;
+          }
+          .palette-2 .color-1 {
+            background-color: $colorDriedBlood;
+          }
+          .palette-2 .color-2 {
+            background-color: $colorRustyRed;
+          }
+          .palette-2 .color-3 {
+            background-color: $colorTomato;
+          }
+          .palette-3 .color-1 {
+            background-color: $colorSlate;
+          }
+          .palette-3 .color-2 {
+            background-color: $colorFadedOrange;
+          }
+          .palette-3 .color-3 {
+            background-color: $colorLightGreyBlue;
+          }
+        }
+      }
+    }
+  }
+}

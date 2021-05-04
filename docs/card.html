@@ -14,94 +14,186 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Awesome Profile Cards Landing</title>
+    <title>Awesome Profile-Cards</title>
   </head>
   <body>
-    
-    <section class= "preview">
-        <button class="preview__reset"> 
-          <span class="far fa-trash-alt"></span>
-          <span>Reset</span>
-        </button>
-        <section class= "preview__card">
-          <div class="preview__card-data">
-            <h2 class="preview__card-data--name">Nombre Apellido</h2>
-            <h3 class="preview__card-data--jobTitle">Front-end developer</h3>
-          </div>
-          <img class="preview__card-image" src="./assets/images/card-pic.jpg" alt="Card Picture"></img>
-          <div class="preview__card-socials">
-              <a class="preview__card-socials--items" href="tel:+34"><span class="fas fa-mobile-alt"><span></a>
-              <a class="preview__card-socials--items" href="mailto:"><span class="far fa-envelope"></span></a>
-              <a class="preview__card-socials--items" href="linkedin.com"><span class="fab fa-linkedin-in"></span></a>
-              <a class="preview__card-socials--items" href="github.com"><span class="fab fa-github-alt"></span></a>
-          </div>
-      </section>
-    </section>
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/images/tarjetas-molonas-large.png"
+        alt="Tarjetas molonas"
+      />
+    </header>
 
-    <section class="collapsable">
-      <section class="collapsable-design">
-        <div class="collapsable-design__menu">
-          <i class="far fa-object-ungroup"></i>
-          <h2 class="collapsable-design__menu--title">diseña</h2>
-          <i class="fas fa-chevron-up"></i>
-        </div>
-
-        <div class="collapsable-design__colors">
-          <h3 class="collapsable-design__colors--title">colores</h3>
-          <div clas="collapsable-design__colors--form">
-            <label class="palette" for="palette1">
-              <input type="radio" name="palette" id="palette1" value="0" checked="" />
-              <ul class="palette__square palette-1">
-                <li class="palette__square--color color-1"></li>
-                <li class="palette__square--color color-2"></li>
-                <li class="palette__square--color color-3"></li>
-              </ul>
-            </label>
-
-            <label class="palette" for="palette2">
-              <input type="radio" name="palette" id="palette2" value="0" checked="" />
-              <ul class="palette__square palette-2">
-                <li class="palette__square--color color-1"></li>
-                <li class="palette__square--color color-2"></li>
-                <li class="palette__square--color color-3"></li>
-              </ul>
-            </label>
-
-            <label class="palette" for="palette3">
-              <input type="radio" name="palette" id="palette3" value="0" checked="" />
-              <ul class="palette__square palette-3">
-                <li class="palette__square--color color-1"></li>
-                <li class="palette__square--color color-2"></li>
-                <li class="palette__square--color color-3"></li>
-              </ul>
-            </label>
-          </div>
-        </div>
-      </section>
-
-      
-      <section class="collapsable-share">
-        <div class="collapsable-share__menu">
-          <i class="fas fa-share-alt"></i>
-          <h2 class="collapsable-share__menu--title">comparte</h2>
-          <i class="fas fa-chevron-up"></i>
-        </div>
-        <button class="collapsable-share__button">
-          <i class="far fa-address-card"></i>crear tarjeta
-        </button>
-        <div class="collapsable-share__twitter">
-          <h3 class="collapsable-share__twitter--title">La tarjeta ha sido creada</h3>
-          <a
-            class="collapsable-share__twitter--link"
-            href="https://awesome-profile-card.com?id=A456DF0001"
-          ></a>
-          <button class="collapsable-share__twitter--button">
-            <i class="fab fa-twitter"></i>compartir en twitter
+    <div class="main">
+      <section class= "preview">
+          <button class="preview__reset"> 
+            <span class="far fa-trash-alt"></span>
+            <span>Reset</span>
           </button>
-        </div>
+          <section class= "preview__card">
+            <div class="preview__card-data">
+              <h2 class="preview__card-data--name">Nombre Apellido</h2>
+              <h3 class="preview__card-data--jobTitle">Front-end developer</h3>
+            </div>
+            <img class="preview__card-image" src="./assets/images/card-pic.jpg" alt="Card Picture"></img>
+            <div class="preview__card-socials">
+                <a class="preview__card-socials--items" href="tel:+34"><span class="fas fa-mobile-alt"><span></a>
+                <a class="preview__card-socials--items" href="mailto:"><span class="far fa-envelope"></span></a>
+                <a class="preview__card-socials--items" href="linkedin.com"><span class="fab fa-linkedin-in"></span></a>
+                <a class="preview__card-socials--items" href="github.com"><span class="fab fa-github-alt"></span></a>
+            </div>
+        </section>
       </section>
 
-    </section>
+      <section class="collapsable">
+        <section class="collapsable-design">
+          <div class="collapsable-design__menu">
+            <i class="far fa-object-ungroup"></i>
+            <h2 class="collapsable-design__menu--title">diseña</h2>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+
+          <div class="collapsable-design__colors">
+            <h3 class="collapsable-design__colors--title">colores</h3>
+            <div clas="collapsable-design__colors--form">
+              <label class="palette" for="palette1">
+                <input type="radio" name="palette" id="palette1" value="0" checked="" />
+                <ul class="palette__square palette-1">
+                  <li class="palette__square--color color-1"></li>
+                  <li class="palette__square--color color-2"></li>
+                  <li class="palette__square--color color-3"></li>
+                </ul>
+              </label>
+
+              <label class="palette" for="palette2">
+                <input type="radio" name="palette" id="palette2" value="0" checked="" />
+                <ul class="palette__square palette-2">
+                  <li class="palette__square--color color-1"></li>
+                  <li class="palette__square--color color-2"></li>
+                  <li class="palette__square--color color-3"></li>
+                </ul>
+              </label>
+
+              <label class="palette" for="palette3">
+                <input type="radio" name="palette" id="palette3" value="0" checked="" />
+                <ul class="palette__square palette-3">
+                  <li class="palette__square--color color-1"></li>
+                  <li class="palette__square--color color-2"></li>
+                  <li class="palette__square--color color-3"></li>
+                </ul>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="collapsable-fill-section">
+          <div class="container-fill">
+            <div class="fill">
+              <i class="far fa-keyboard keyBoard"></i>
+              <h1 class="container-fill-title">rellena</h1>
+              <a class="up-down" href=""><i class="fas fa-chevron-up arrowUp"></i></a>
+            </div>
+
+            <form class="form" action="https://formspree.io/f/xyylkpnp" method="post">
+              <label class="label" for="name">nombre completo</label>
+              <input
+                class="input"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Ej: Sally Jill"
+                required
+              />
+              <label class="label" for="job">puesto</label>
+              <input
+                class="input"
+                id="job"
+                type="text"
+                name="job"
+                placeholder="Ej: Front-end unicorn"
+                required
+              />
+              <label class="label" for="image">imagen de perfil</label>
+              <div class="image-button">
+                <a href="">
+                  <input
+                    class="button"
+                    id="image"
+                    type="button"
+                    value="Añadir imagen"
+                    name="image"
+                /></a>
+                <input
+                  class="input-preview"
+                  id="image"
+                  type="input"
+                  name="input-preview"
+                />
+              </div>
+              <label class="label" for="email">email</label>
+              <input
+                class="input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Ej: sally-hill@gmail.com"
+                required
+              />
+              <label class="label" for="telephone">teléfono</label>
+              <input
+                class="input"
+                id="telephone"
+                type="tel"
+                name="telephone"
+                placeholder="Ej: 555-55-55-55"
+                required
+              />
+              <label class="label" for="linkedin">linkedin</label>
+              <input
+                class="input"
+                id="linkedin"
+                type="url"
+                name="linkedin"
+                placeholder="Ej: linkedin.com/in/sally.hill"
+              />
+              <label class="label" for="github">github</label>
+              <input
+                class="input"
+                id="github"
+                type="url"
+                name="github"
+                placeholder="Ej: @sally-hill"
+              />
+            </form>
+          </div>
+        </section>
+
+        <section class="collapsable-share">
+          <div class="collapsable-share__menu">
+            <i class="fas fa-share-alt"></i>
+            <h2 class="collapsable-share__menu--title">comparte</h2>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+          <button class="collapsable-share__button">
+            <i class="far fa-address-card"></i>
+            <span class="collapsable-share__button--text">crear tarjeta</span>
+          </button>
+          <div class="collapsable-share__line"></div>
+          <div class="collapsable-share__twitter">
+            <h3 class="collapsable-share__twitter--title">La tarjeta ha sido creada</h3>
+            <a class="collapsable-share__twitter--link" href=""
+              >https://awesome-profile-card.com?id=A456DF0001</a
+            >
+            <button class="collapsable-share__twitter--button">
+              <i class="fab fa-twitter"></i>
+              <span>Compartir en twitter</span>
+            </button>
+          </div>
+        </section>
+
+      </section>
+    </div>
     
     <script src="./assets/js/main.js"></script>
   </body>

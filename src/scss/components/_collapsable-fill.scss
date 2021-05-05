@@ -37,6 +37,7 @@
   height: 18px;
 }*/
 .arrowUp {
+  display: block;
   position: absolute;
   /*right: 0;*/
   margin-right: 20px;
@@ -78,6 +79,7 @@
   margin-bottom: 20px;
 }
 .button {
+  display: block;
   width: 140px;
   height: 30px;
   background-color: $colorDullOrange;
@@ -88,6 +90,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  box-shadow: black;
 }
 .input-preview {
   display: inline-block;

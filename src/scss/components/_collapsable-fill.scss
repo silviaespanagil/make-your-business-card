@@ -1,23 +1,92 @@
-.container-fill {
-  /*margin: 0 20px 0;*/
-  padding-bottom: 10px;
-  border-bottom: 1px solid $colorWhite-two;
-  display: flex;
-  flex-direction: column;
+/* INCLUDES (me falta cambiar nombres elementosHTML)
+.collapsable-fill(collapsable-fill-section) {
+border-bottom: 1px solid $colorWhite-two;
+ &__menu(fill) {
+    display: grid;
+    grid-template-columns: 21px 1fr 16px;
+    grid-template-rows: 24px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    &--keyboard(keyBoard) {
+        text-align: center;
+        font-size: 18px;
+        color: $colorDullOrange;
+        }
+    &--title(container-fill-title) {
+        text-transform: uppercase;
+        color: $colorGunMetal;
+      /*font-size: 18px;
+        font-family: $fontOpenSans;
+        font-weight: 600;*/
+/*      @include menu-title;
+        margin-left: 10px;
+        }
+    &--arrowup(arrowUp) {
+        font-size: 18px;
+        color: $colorGunMetal;
+        }
+  }
+  &__fill(container-fill) {
+    .label {
+      display: block;
+      font-size: 14px;
+      line-height: 20px;
+      color: $colorDarkGreenBlue;
+      font-family: $fontOpenSans;
+      margin-bottom: 7px;
+    }
+    .label:first-letter {
+      text-transform: uppercase;
+    }
+    .input {
+      width: 100%;
+      height: 30px;
+      border: 1px solid $colorHospitalGreen;
+      margin-bottom: 20px;
+      padding-left: 5px;
+    }
+    .input::placeholder {
+      color: $colorPlaceholder;
+      font-size: 14px;
+      line-height: 20px;
+      padding-left: 10px;
+    }
+    &--image(image-button) {
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-start;
+       margin-bottom: 20px;
+      .button {
+         display: block;
+         width: 140px;
+         height: 30px;
+         background-color: $colorDullOrange;
+         border: none;
+         border-radius: 3px;
+         font-family: $fontOpenSans;
+         color: $colorWhite;
+         font-size: 14px;
+         line-height: 20px;
+         text-align: center;
+         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+      }
+      .input-preview {
+         display: inline-block;
+         margin-left: 20px;
+         width: 30px;
+         height: 30px;
+         border: 1px solid $colorHospitalGreen;
+      }
+    }
+  }  
 }
-.container-fill-title {
-  text-transform: uppercase;
-  color: $colorGunMetal;
-  /*font-size: 18px;
-  font-family: $fontOpenSans;
-  font-weight: 600;*/
-  @include menu-title;
-  margin-left: 10px;
+*/
+
+.collapsable-fill-section {
+  border-bottom: 1px solid $colorWhite-two;
 }
 .fill {
-  /*display: flex;
-  flex-direction: row;
-  justify-content: flex-start;*/
   display: grid;
   grid-template-columns: 21px 1fr 16px;
   grid-template-rows: 24px;
@@ -30,9 +99,24 @@
   font-size: 18px;
   color: $colorDullOrange;
 }
+.container-fill-title {
+  text-transform: uppercase;
+  color: $colorGunMetal;
+  /*font-size: 18px;
+  font-family: $fontOpenSans;
+  font-weight: 600;*/
+  @include menu-title;
+  margin-left: 10px;
+}
 .arrowUp {
   font-size: 18px;
   color: $colorGunMetal;
+}
+.container-fill {
+  /*margin: 0 20px 0;*/
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .label {
   display: block;

@@ -1,9 +1,18 @@
+// CORE
 @import "core/variables";
 @import "core/reset";
-@import "pages/header";
+@import "core/mixins";
+
+// LAYOUT
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+// COMPONENTS
+@import "components/cardpreview";
+@import "components/collapsable-design";
+@import "components/collapsable-fill";
+@import "components/collapsable-share";
+
+// PAGES
 @import "pages/landing";
-@import "pages/cardpreview";
-@import "pages/collapsable-design";
-@import "pages/collapsable-fill";
-@import "pages/collapsable-share";
-@import "pages/footer";

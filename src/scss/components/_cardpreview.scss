@@ -1,7 +1,22 @@
 .preview {
-  width: 100%;
   background: linear-gradient($colorSilver, $colorPaleGrey);
-  padding: 38px 35px 40px 45px;
+  padding: 38px 0 40px 0;
+  display: grid;
+  @include tablet() {
+    width: 100%;
+    margin: 20px 40px 20px 30px;
+    border-radius: 6px;
+  }
+  @include desktop() {
+    border-radius: 15px;
+  }
+  &__container {
+    grid-area: card;
+    @include tablet() {
+      padding-top: 173px;
+      grid-row-start: 1;
+    }
+  }
   &__reset {
     width: 75px;
     height: 30px;
@@ -14,11 +29,17 @@
     text-transform: uppercase;
     line-height: 20px;
     margin-bottom: 20px;
+    /*position: relative;
+    left: -20%;*/
   }
+
   &__card {
+    width: 240px;
+    max-height: 329px;
     display: flex;
     flex-direction: column;
     background-color: $colorWhite;
+    box-shadow: 0 1px 10px 0 $colorBlackShadow;
     &-data {
       margin: 21px 14px 10px 0;
       padding-left: 15px;
@@ -43,16 +64,21 @@
     }
     &-socials {
       display: flex;
+      align-items: center;
       padding: 10px 0 12px 20px;
 
       &--items {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 32px;
         height: 32px;
         text-align: center;
         margin-right: 10px;
         border: 2px solid $colorHospitalGreen;
+        color: $colorDarkGreenBlue;
         border-radius: 100%;
+        font-size: 18px;
       }
     }
   }

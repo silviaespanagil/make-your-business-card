@@ -14,16 +14,24 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Awesome Profile Cards Landing</title>
+    <title>Awesome Profile-Cards</title>
   </head>
   <body>
     <include src="./partials/header.html"></include>
-    <include src="./partials/cardpreview.html"></include>
-    <section class="collapsable">
-      <include src="./partials/collapsable-design.html"></include>
-      <include src="./partials/collapsable-fill.html"></include>
-      <include src="./partials/collapsable-share.html"></include>
-    </section>
+    <main class="main">
+      <include src="./partials/cardpreview.html"></include>
+      <form class="collapsable" action="" method="">
+        <!--<include
+          src="./partials/collapsable-header.html"
+          title="Disfruta"
+          icon="fa-enjoy"
+        ></include>
+        <include src="./partials/section-enjoy.html"></include>-->
+        <include src="./partials/collapsable-design.html"></include>
+        <include src="./partials/collapsable-fill.html"></include>
+        <include src="./partials/collapsable-share.html"></include>
+      </form>
+    </main>
     <include src="./partials/footer.html"></include>
     <script src="./assets/js/main.js"></script>
   </body>

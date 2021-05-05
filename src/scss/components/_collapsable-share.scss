@@ -1,0 +1,91 @@
+.collapsable-share {
+  border-bottom: 1px solid $colorWhite-two;
+  margin-top: 10px;
+  color: $colorGunMetal;
+  &__menu {
+    display: grid;
+    grid-template-columns: 21px 1fr 16px;
+    grid-template-rows: 24px;
+    align-items: center;
+
+    font-size: 1.125rem;
+    .fa-share-alt {
+      color: $colorDullOrange;
+    }
+    &--title {
+      margin-left: 10px;
+
+      /*font-family: $fontOpenSans;
+      font-weight: 600;
+      font-size: 1.125rem;*/
+      @include menu-title;
+      text-transform: uppercase;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 30px auto;
+    color: $colorWhite;
+    background: $colorDullOrange;
+    border-radius: 12px;
+    height: 50px;
+    padding: 13px 17px;
+
+    text-transform: uppercase;
+    font-family: $fontOpenSans;
+    font-weight: 600;
+    font-size: 1.125rem;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    &:active {
+      background: $colorWhite-two;
+    }
+    .fa-address-card {
+      font-size: 1.375rem;
+      padding-right: 5px;
+    }
+  }
+  &__line {
+    border-bottom: 1px solid $colorWhite-two;
+  }
+  &__twitter {
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    &--title {
+      font-family: $fontOpenSans;
+      font-weight: 600;
+      font-size: 1.125rem;
+      text-transform: initial;
+      padding-bottom: 5px;
+    }
+    &--link {
+      display: block;
+      color: $colorDullOrange;
+      font-family: $fontOpenSans;
+      font-size: 0.75rem;
+      font-weight: 600;
+      white-space: nowrap;
+
+      @media (max-width: 340px) {
+        margin-left: -5px;
+      }
+    }
+    &--button {
+      background: $colorAzure;
+      color: white;
+
+      height: 30px;
+      padding: 0px 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.32);
+
+      font-size: 0.875rem;
+      font-family: $fontOpenSans;
+
+      .fa-twitter {
+        padding-right: 5px;
+        font-size: 18px;
+      }
+    }
+  }
+}

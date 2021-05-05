@@ -2,8 +2,6 @@
   background: linear-gradient($colorSilver, $colorPaleGrey);
   padding: 38px 0 40px 0;
   display: grid;
-  grid-template-columns: repeat (auto-fill, 3fr);
-  grid-template-areas: none card none;
   @include tablet() {
     width: 100%;
     margin: 20px 40px 20px 30px;
@@ -14,6 +12,10 @@
   }
   &__container {
     grid-area: card;
+    @include tablet() {
+      padding-top: 173px;
+      grid-row-start: 1;
+    }
   }
   &__reset {
     width: 75px;

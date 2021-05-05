@@ -5,7 +5,7 @@
   height: 458px;
   &__main {
     display: flex;
-    height: 458px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
 
@@ -64,6 +64,7 @@
       height: 42px;
       border-radius: 21px;
       margin-top: 50px;
+      margin-bottom: 30px;
       text-align: center;
       &--start {
         position: absolute;
@@ -71,7 +72,7 @@
         font-size: 16px;
         font-family: $fontOpenSans;
         font-weight: 600;
-        margin-top: 8%;
+
         transform: translate(-50%, 5%);
 
         // margin: auto;

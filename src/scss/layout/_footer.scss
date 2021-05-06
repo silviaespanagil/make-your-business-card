@@ -29,8 +29,7 @@
     width: 103px;
     margin: 12px 110px 20px 107px;
     @include tablet() {
-      margin: 0;
-      margin-right: 40px;
+      margin: 0 40px 0 0;
     }
   }
 }

@@ -63,7 +63,7 @@
       width: 129px;
       height: 42px;
       border-radius: 21px;
-      margin-top: 50px;
+      margin-top: 35px;
       margin-bottom: 30px;
       text-align: center;
       &--start {
@@ -72,8 +72,7 @@
         font-size: 16px;
         font-family: $fontOpenSans;
         font-weight: 600;
-
-        transform: translate(-50%, 5%);
+        transform: translate(-50%, 35%);
 
         // margin: auto;
       }

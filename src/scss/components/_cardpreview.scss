@@ -1,7 +1,8 @@
 .preview {
   background: linear-gradient($colorSilver, $colorPaleGrey);
   padding: 38px 0 40px 0;
-  display: grid;
+  display: flex;
+  justify-content: center;
   @include tablet() {
     width: 100%;
     margin: 20px 40px 20px 30px;
@@ -11,7 +12,6 @@
     border-radius: 15px;
   }
   &__container {
-    grid-area: card;
     @include tablet() {
       padding-top: 173px;
       grid-row-start: 1;
@@ -29,8 +29,6 @@
     text-transform: uppercase;
     line-height: 20px;
     margin-bottom: 20px;
-    /*position: relative;
-    left: -20%;*/
   }
 
   &__card {

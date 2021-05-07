@@ -3,6 +3,10 @@
   @include tablet() {
     display: flex;
   }
+  /*@include desktop() {
+    max-width: 1024px;
+    margin: 0 auto;
+  }*/
   .collapsable {
     padding: 30px 20px;
     order: -1;

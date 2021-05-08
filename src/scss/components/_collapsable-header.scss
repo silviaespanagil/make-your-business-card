@@ -18,4 +18,10 @@
     margin-left: 10px;
     @include menu-title;
   }
+  .fa-chevron-down {
+    cursor: pointer;
+  }
+  .fa-chevron-up {
+    cursor: pointer;
+  }
 }

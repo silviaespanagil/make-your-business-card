@@ -5,11 +5,14 @@ const collapsableShare = document.querySelector(".js-collapsable-share");
 const arrow1 = document.querySelector(".js-arrow1");
 const arrow2 = document.querySelector(".js-arrow2");
 const arrow3 = document.querySelector(".js-arrow3");
+const borderHeader = document.querySelector(".border-hidden");
+borderHeader.classList.remove("border-hidden");
 
 function collapsableArrowDesign() {
   collapsableDesign.classList.toggle("collapsable-hidden");
   arrow1.classList.toggle("fa-chevron-up");
   arrow1.classList.toggle("fa-chevron-down");
+  borderHeader.classList.toggle("border-hidden");
 }
 arrow1.addEventListener("click", collapsableArrowDesign);
 

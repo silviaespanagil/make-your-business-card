@@ -50,13 +50,13 @@
         </section>
 
         <form class="collapsable" action="" method="">
-          <div class="collapsable__header">
+          <div class="collapsable__header border-hidden">
             <i class="far fa-object-ungroup"></i>
-            <h2>Diseña</h2>
-            <i class="fas fa-chevron-up"></i>
+            <h2 class="collapsable__header--title">Diseña</h2>
+            <i class="fas fa-chevron-up js-arrow1"></i>
           </div>
 
-          <section class="collapsable-design">
+          <section class="collapsable-design js-collapsable-design">
             <div class="collapsable-design__colors">
               <h3 class="collapsable-design__colors--title">colores</h3>
               <div clas="collapsable-design__colors--palettes">
@@ -90,13 +90,13 @@
             </div>
           </section>
 
-          <div class="collapsable__header">
+          <div class="collapsable__header border-hidden">
             <i class="far fa-keyboard keyBoard"></i>
-            <h2>Rellena</h2>
-            <i class="fas fa-chevron-up"></i>
+            <h2 class="collapsable__header--title">Rellena</h2>
+            <i class="fas fa-chevron-down js-arrow2"></i>
           </div>
 
-          <section class="collapsable-fill">
+          <section class="collapsable-fill js-collapsable-fill collapsable-hidden">
             <div class="collapsable-fill__content">
               <label class="label" for="name">nombre completo</label>
               <input
@@ -165,13 +165,13 @@
             </div>
           </section>
 
-          <div class="collapsable__header">
+          <div class="collapsable__header border-hidden">
             <i class="fas fa-share-alt"></i>
-            <h2>Comparte</h2>
-            <i class="fas fa-chevron-up"></i>
+            <h2 class="collapsable__header--title">Comparte</h2>
+            <i class="fas fa-chevron-down js-arrow3"></i>
           </div>
 
-          <section class="collapsable-share">
+          <section class="collapsable-share js-collapsable-share collapsable-hidden">
             <button class="collapsable-share__button">
               <i class="far fa-address-card"></i>
               <span class="collapsable-share__button--text">crear tarjeta</span>

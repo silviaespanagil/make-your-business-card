@@ -14,7 +14,7 @@
   .fa-share-alt {
     color: $colorDullOrange;
   }
-  h2 {
+  &--title {
     margin-left: 10px;
     @include menu-title;
   }

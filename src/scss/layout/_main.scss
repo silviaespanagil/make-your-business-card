@@ -10,11 +10,15 @@
     }
     .collapsable {
       padding: 20px 20px 30px 20px;
+      min-width: 320px;
       order: -1;
       background: linear-gradient(to bottom, $colorWhiteFour, $colorWhite 9%);
       @include tablet() {
         max-width: 400px;
         padding: 30px 0px 20px 40px;
+      }
+      .collapsable-hidden {
+        display: none;
       }
     }
   }

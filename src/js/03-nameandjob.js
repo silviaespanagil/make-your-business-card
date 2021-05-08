@@ -6,14 +6,16 @@
 //nombre
 const fullName = document.querySelector(".js-name");
 const nameInput = document.querySelector(".js-nameInput");
+const nameDefault = "Camus Ollo Branco";
 //cargo
 const jobTitle = document.querySelector(".js-jobTitle");
 const jobInput = document.querySelector(".js-job");
+const jobDefault = "Ser un perro bello";
 
 function changeNameData() {
   const nameValue = nameInput.value;
   if (nameValue === "") {
-    fullName.innerHTML = "Camus Ollo Branco";
+    fullName.innerHTML = nameDefault;
   } else {
     fullName.innerHTML = nameValue;
   }
@@ -22,7 +24,7 @@ function changeNameData() {
 function changeJob() {
   const jobValue = jobInput.value;
   if (jobValue === "") {
-    jobTitle.innerHTML = "Ser un perro bello";
+    jobTitle.innerHTML = jobDefault;
   } else {
     jobTitle.innerHTML = jobValue;
   }

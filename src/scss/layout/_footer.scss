@@ -2,13 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-top: solid 1px $colorWhite-two;
+  padding: 20px 0px;
+  height: 110px;
 
   @include tablet() {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     height: 60px;
+    padding: 20px 40px;
   }
 
   &__info {
@@ -16,20 +20,9 @@
     color: $colorBrownishGrey;
     opacity: 0.5;
     font-size: 14px;
-    margin: 18px 60px 0 59px;
-
-    @include tablet() {
-      margin: 0;
-      margin-left: 41px;
-    }
   }
 
   &__logo {
-    height: 40px;
     width: 103px;
-    margin: 12px 110px 20px 107px;
-    @include tablet() {
-      margin: 0 40px 0 0;
-    }
   }
 }

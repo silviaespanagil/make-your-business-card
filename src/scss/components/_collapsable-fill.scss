@@ -1,27 +1,6 @@
 .collapsable-fill {
   border-bottom: 1px solid $colorWhite-two;
-  &__menu {
-    display: grid;
-    grid-template-columns: 21px 1fr 16px;
-    grid-template-rows: 24px;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    font-size: 18px;
-    .keyBoard {
-      text-align: center;
-      color: $colorDullOrange;
-    }
-    &--title {
-      text-transform: uppercase;
-      color: $colorGunMetal;
-      @include menu-title;
-      margin-left: 10px;
-    }
-    .arrowUp {
-      color: $colorGunMetal;
-    }
-  }
+  padding-top: 15px;
   &__content {
     margin-bottom: 10px;
     .label {

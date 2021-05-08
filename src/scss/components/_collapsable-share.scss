@@ -1,30 +1,9 @@
 .collapsable-share {
   border-bottom: 1px solid $colorWhite-two;
-  margin-top: 10px;
   color: $colorGunMetal;
-  &__menu {
-    display: grid;
-    grid-template-columns: 21px 1fr 16px;
-    grid-template-rows: 24px;
-    align-items: center;
-
-    font-size: 1.125rem;
-    .fa-share-alt {
-      color: $colorDullOrange;
-    }
-    &--title {
-      margin-left: 10px;
-
-      /*font-family: $fontOpenSans;
-      font-weight: 600;
-      font-size: 1.125rem;*/
-      @include menu-title;
-      text-transform: uppercase;
-    }
-  }
   &__button {
     display: block;
-    margin: 30px auto;
+    margin: 20px auto 30px;
     color: $colorWhite;
     background: $colorDullOrange;
     border-radius: 12px;
@@ -66,7 +45,7 @@
       white-space: nowrap;
 
       @media (max-width: 340px) {
-        margin-left: -5px;
+        font-size: 0.65rem;
       }
     }
     &--button {

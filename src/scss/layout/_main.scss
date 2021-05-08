@@ -1,19 +1,21 @@
 .main {
   background: linear-gradient(to bottom, $colorWhiteFour, $colorWhite 9%);
-  @include tablet() {
-    display: flex;
-  }
-  /*@include desktop() {
-    max-width: 1024px;
-    margin: 0 auto;
-  }*/
-  .collapsable {
-    padding: 30px 20px;
-    order: -1;
-    background: linear-gradient(to bottom, $colorWhiteFour, $colorWhite 9%);
+  .card-wrapper {
     @include tablet() {
-      max-width: 400px;
-      padding: 30px 0px 20px 40px;
+      margin: 0 auto;
+      display: flex;
+    }
+    @include desktop() {
+      max-width: 1024px;
+    }
+    .collapsable {
+      padding: 20px 20px 30px 20px;
+      order: -1;
+      background: linear-gradient(to bottom, $colorWhiteFour, $colorWhite 9%);
+      @include tablet() {
+        max-width: 400px;
+        padding: 30px 0px 20px 40px;
+      }
     }
   }
 }

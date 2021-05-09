@@ -19,12 +19,35 @@
   <body>
     <include src="./partials/header.html"></include>
     <main class="main">
-      <include src="./partials/cardpreview.html"></include>
-      <form class="collapsable" action="" method="">
-        <include src="./partials/collapsable-design.html"></include>
-        <include src="./partials/collapsable-fill.html"></include>
-        <include src="./partials/collapsable-share.html"></include>
-      </form>
+      <div class="card-wrapper">
+        <include src="./partials/cardpreview.html"></include>
+        <form class="collapsable" action="" method="">
+          <include
+            src="./partials/collapsable-header.html"
+            title="Diseña"
+            icon="far fa-object-ungroup"
+            arrow="js-arrow1"
+            direction="up"
+          ></include>
+          <include src="./partials/collapsable-design.html"></include>
+          <include
+            src="./partials/collapsable-header.html"
+            title="Rellena"
+            icon="far fa-keyboard keyBoard"
+            arrow="js-arrow2"
+            direction="down"
+          ></include>
+          <include src="./partials/collapsable-fill.html"></include>
+          <include
+            src="./partials/collapsable-header.html"
+            title="Comparte"
+            icon="fas fa-share-alt"
+            arrow="js-arrow3"
+            direction="down"
+          ></include>
+          <include src="./partials/collapsable-share.html"></include>
+        </form>
+      </div>
     </main>
     <include src="./partials/footer.html"></include>
     <script src="./assets/js/main.js"></script>

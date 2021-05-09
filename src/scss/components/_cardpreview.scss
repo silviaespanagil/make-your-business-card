@@ -1,11 +1,11 @@
 .preview {
   background: linear-gradient($colorSilver, $colorPaleGrey);
   padding: 38px 0 40px 0;
-  display: grid;
-  grid-template-columns: repeat (auto-fill, 3fr);
-  grid-template-areas: none card none;
+  display: flex;
+  justify-content: center;
   @include tablet() {
     width: 100%;
+    min-height: 826px;
     margin: 20px 40px 20px 30px;
     border-radius: 6px;
   }
@@ -13,7 +13,10 @@
     border-radius: 15px;
   }
   &__container {
-    grid-area: card;
+    @include tablet() {
+      padding-top: 173px;
+      grid-row-start: 1;
+    }
   }
   &__reset {
     width: 75px;
@@ -27,8 +30,6 @@
     text-transform: uppercase;
     line-height: 20px;
     margin-bottom: 20px;
-    /*position: relative;
-    left: -20%;*/
   }
 
   &__card {
@@ -81,3 +82,15 @@
     }
   }
 }
+// .changeColor1 {
+//   .preview__card-data {
+//       border-left: 5px solid red;
+//   }
+//   .preview__card-data--name {
+//       color: blue;
+//   }
+//   .preview__card-socials--items {
+//         border: 2px solid green;
+//         color: blue;
+//   }
+// }

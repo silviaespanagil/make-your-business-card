@@ -1,28 +1,34 @@
 'use strict';
 
-const radioElement = document.querySelector('.collapsable-design__colors--palettes');
-const cardPreviewElement = document.querySelector('.preview');
-// const palette1 = document.querySelector('.palette-1');
-// const palette2 = document.querySelector('.palette-2');
-// const palette3 = document.querySelector('.palette-3');
+const paletteElement = document.querySelector('.collapsable-design__colors');
+
+
+const cardDataNameColor = document.querySelector('.preview__card-data--name');
+// const cardDataNameColor = document.querySelector('.preview__card-data--name');
+
+
+
+
 
 function changePaletteColor(event) {
   let target = event.target;
-  let cardDataNameColor = document.getElementsByClassName(".preview__card-data--name");
+  
   switch (target.id) {
-  case 'palette1':
-    // getComputedStyle(cardPreviewElement)
-    //   .getPropertyValue('.preview__card-data');
-    cardDataNameColor.documentElement.style
-      .setProperty('color', 'pink');
-    // cardDataNameColor.style.color = 'blue';
-    break;
-  case 'palette2':
-    palette2.classList.add('changeColor2');
-    break;
-  case 'palette3':
-    palette3.classList.add('changeColor3');
-    break;
-  }
+    case 'palette1':
+      cardDataNameColor.classList.add('changeColor1');
+      cardDataNameColor.classList.remove('changeColor2');
+      cardDataNameColor.classList.remove('changeColor3');
+      break;
+    case 'palette2':
+      cardDataNameColor.classList.add('changeColor2');
+      cardDataNameColor.classList.remove('changeColor1');
+      cardDataNameColor.classList.remove('changeColor3');
+      break;
+    case 'palette3':
+      cardDataNameColor.classList.add('changeColor3');
+      cardDataNameColor.classList.remove('changeColor1');
+      cardDataNameColor.classList.remove('changeColor2');
+      break;
+  }  
 }
-radioElement.addEventListener ('change', changePaletteColor);
+paletteElement.addEventListener ('change', changePaletteColor);

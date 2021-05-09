@@ -53,4 +53,6 @@ function changeGit(event) {
 /*function changeGit(event) {
     let buttonGit = document.querySelector(".js-buttonGit");
     buttonGit.setAttribute("href", event.target.value);
-  }*/
+  }
+  (si pegara todo el url de mi perfil de github)
+  */

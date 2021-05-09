@@ -23,7 +23,7 @@
       <input
         class="button"
         id="image"
-        type="button"
+        type="file"
         value="Añadir imagen"
         name="image"
       />
@@ -32,37 +32,49 @@
     </div>
     <label class="label" for="email">email</label>
     <input
-      class="input"
+      class="input js-email"
       id="email"
       type="email"
       name="email"
       placeholder="Ej: sally-hill@gmail.com"
+      value
+      onkeyup="changeEmail(event)"
+      onchange="changeEmail(event)"
       required
     />
     <label class="label" for="telephone">teléfono</label>
     <input
-      class="input"
+      class="input js-tel"
       id="telephone"
       type="tel"
       name="telephone"
-      placeholder="Ej: 555-55-55-55"
+      placeholder="Ej: 123456789"
+      value
+      onkeyup="changeTelephone(event)"
+      onchange="changeTelephone(event)"
       required
     />
     <label class="label" for="linkedin">linkedin</label>
     <input
-      class="input"
+      class="input js-link"
       id="linkedin"
       type="url"
       name="linkedin"
-      placeholder="Ej: linkedin.com/in/sally.hill"
+      placeholder="Ej: sally.hill"
+      value
+      onkeyup="changeLinkedin(event)"
+      onchange="changeLinkedin(event)"
     />
     <label class="label" for="github">github</label>
     <input
-      class="input"
+      class="input js-git"
       id="github"
       type="url"
       name="github"
-      placeholder="Ej: @sally-hill"
+      placeholder="Ej: sally-hill"
+      value
+      onkeyup="changeGit(event)"
+      onchange="changeGit(event)"
     />
   </div>
 </section>

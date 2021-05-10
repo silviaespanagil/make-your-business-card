@@ -47,3 +47,4 @@ function changePaletteColor(event) {
 }
 paletteElement.addEventListener ('change', changePaletteColor);
 
+console.log(changePaletteColor)

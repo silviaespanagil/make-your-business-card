@@ -19,11 +19,12 @@
       required
     />
     <label class="label" for="image">imagen de perfil</label>
+
     <div class="collapsable-fill__content--buttonPreview">
       <input
         class="button"
         id="image"
-        type="button"
+        type="file"
         value="Añadir imagen"
         name="image"
       />
@@ -37,6 +38,9 @@
       type="email"
       name="email"
       placeholder="Ej: sally-hill@gmail.com"
+      value
+      onkeyup="changeEmail(event)"
+      onchange="changeEmail(event)"
       required
     />
     <label class="label" for="telephone">teléfono</label>
@@ -45,7 +49,10 @@
       id="telephone"
       type="tel"
       name="telephone"
-      placeholder="Ej: 555-55-55-55"
+      placeholder="Ej: 123456789"
+      value
+      onkeyup="changeTelephone(event)"
+      onchange="changeTelephone(event)"
       required
     />
     <label class="label" for="linkedin">linkedin</label>
@@ -54,7 +61,10 @@
       id="linkedin"
       type="url"
       name="linkedin"
-      placeholder="Ej: linkedin.com/in/sally.hill"
+      placeholder="Ej: sally.hill"
+      value
+      onkeyup="changeLinkedin(event)"
+      onchange="changeLinkedin(event)"
     />
     <label class="label" for="github">github</label>
     <input
@@ -62,7 +72,10 @@
       id="github"
       type="url"
       name="github"
-      placeholder="Ej: @sally-hill"
+      placeholder="Ej: sally-hill"
+      value
+      onkeyup="changeGit(event)"
+      onchange="changeGit(event)"
     />
   </div>
 </section>

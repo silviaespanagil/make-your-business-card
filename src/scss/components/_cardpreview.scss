@@ -5,7 +5,7 @@
   justify-content: center;
   @include tablet() {
     width: 100%;
-    min-height: 850px;
+    min-height: 826px;
     margin: 20px 40px 20px 30px;
     border-radius: 6px;
   }
@@ -82,3 +82,23 @@
     }
   }
 }
+.changeColor {
+  color: black;
+}
+.changeColor1 {
+  color: red;
+}
+.changeColor2 {
+  color: blue;
+}
+.changeColor3 {
+  color: green;
+}
+//   .preview__card-data--name {
+//       color: blue;
+//   }
+//   .preview__card-socials--items {
+//         border: 2px solid green;
+//         color: blue;
+//   }
+// }

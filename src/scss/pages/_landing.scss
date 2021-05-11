@@ -22,8 +22,8 @@
       background-size: cover;
       width: 250px;
       height: 63px;
-      margin-top: 95px;
-      margin-bottom: 35.4px;
+      margin-top: 21%;
+      margin-bottom: 7.72%;
       @media all and (min-width: 768px) {
         background-image: url("../images/tarjetas-molonas-large.png");
         width: 419px;
@@ -37,6 +37,7 @@
       font-size: 19.2px;
       font-weight: 900;
       font-family: $fontMerriweather;
+      margin-bottom: 1%;
       //   width: 264.8px;
       //   height: 38.4px;
       @media all and (min-width: 768px) {
@@ -48,7 +49,7 @@
       color: $colorDarkGreenBlue;
       font-size: 12.8px;
       font-weight: normal;
-      margin-bottom: 17.8px;
+      margin-bottom: 5%;
       font-family: $fontOpenSans;
       width: 264.8px;
       @media all and (min-width: 768px) {
@@ -98,8 +99,8 @@
       width: 129px;
       height: 42px;
       border-radius: 21px;
-      margin-top: 38.6px;
-      margin-bottom: 30px;
+      margin-top: 8.42%;
+      margin-bottom: 6.55%;
       text-align: center;
       @media all and (min-width: 768px) {
         margin-top: 186px;

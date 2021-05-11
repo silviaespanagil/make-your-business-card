@@ -11,7 +11,6 @@ const cardDataBorderColor = document.querySelector('.preview__card-data');
 
 function changePaletteColor(event) {
   let target = event.target;
-  console.log(cardDataSocialColor.length);
   switch (target.id) {
     case 'palette1':
       cardDataNameColor.classList.add('changeNameColor1');
@@ -23,9 +22,8 @@ function changePaletteColor(event) {
       cardDataBorderColor.classList.add('changeBorderColor1');
       cardDataBorderColor.classList.remove('changeBorderColor2', 'changeBorderColor3');
 
-      cardDataSocialColor.forEach(element => element.classList.add('changeSocialColor1'), element =>element.classList.remove('changeSocialColor2, changeSocialColor3'));
-      // cardDataSocialColor.classList.add('changeSocialColor1');
-      // cardDataSocialColor.classList.remove('changeSocialColor2', 'changeSocialColor3');
+      cardDataSocialColor.forEach((element) => element.classList.add('changeSocialColor1'));
+      cardDataSocialColor.forEach((element) => element.classList.remove('changeSocialColor2', 'changeSocialColor3'));
       break;
     case 'palette2':
       cardDataNameColor.classList.add('changeNameColor2');
@@ -37,9 +35,8 @@ function changePaletteColor(event) {
       cardDataBorderColor.classList.add('changeBorderColor2');
       cardDataBorderColor.classList.remove('changeBorderColor1', 'changeBorderColor3');
 
-      cardDataSocialColor.forEach(element => element.classList.add('changeSocialColor2'), element =>element.classList.remove('changeSocialColor1, changeSocialColor3'));
-      // cardDataSocialColor.classList.add('changeSocialColor2');
-      // cardDataSocialColor.classList.remove('changeSocialColor3', 'changeSocialColor1');
+      cardDataSocialColor.forEach((element) => element.classList.add('changeSocialColor2'));
+      cardDataSocialColor.forEach((element) => element.classList.remove('changeSocialColor1', 'changeSocialColor3'));
       break;
     case 'palette3':
       cardDataNameColor.classList.add('changeNameColor3');
@@ -51,10 +48,8 @@ function changePaletteColor(event) {
       cardDataBorderColor.classList.add('changeBorderColor3');
       cardDataBorderColor.classList.remove('changeBorderColor1', 'changeBorderColor2');
 
-      cardDataSocialColor.forEach(element => element.classList.add('changeSocialColor3'), element =>element.classList.remove('changeSocialColor1, changeSocialColor2'));
-
-      // cardDataSocialColor.classList.add('changeSocialColor3');
-      // cardDataSocialColor.classList.remove('changeSocialColor1', 'changeSocialColor2');
+      cardDataSocialColor.forEach((element) => element.classList.add('changeSocialColor3'));
+      cardDataSocialColor.forEach((element) => element.classList.remove('changeSocialColor1', 'changeSocialColor2'));
       break;
   }
 }

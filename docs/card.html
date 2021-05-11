@@ -40,10 +40,10 @@
                   </div>
                   <img class="preview__card-image" src="./assets/images/card-pic.jpg" alt="Card Picture"></img>
                   <div class="preview__card-socials">
-                      <a class="preview__card-socials--items" href="tel:+34"><span class="fas fa-mobile-alt"><span></a>
-                      <a class="preview__card-socials--items" href="mailto:"><span class="far fa-envelope"></span></a>
-                      <a class="preview__card-socials--items" href="linkedin.com"><span class="fab fa-linkedin-in"></span></a>
-                      <a class="preview__card-socials--items" href="github.com"><span class="fab fa-github-alt"></span></a>
+                      <a class="preview__card-socials--items js-buttonTel" href="" target="_blank" title="telephone"><span class="fas fa-mobile-alt"></span></a>
+                      <a class="preview__card-socials--items js-buttonEm" href="" target="_blank" title="email"><span class="far fa-envelope"></span></a>
+                      <a class="preview__card-socials--items js-buttonLink" href="" target="_blank" title="linkedin"><span class="fab fa-linkedin-in"></span></a>
+                      <a class="preview__card-socials--items js-buttonGit" href="" target="_blank" title="github"><span class="fab fa-github-alt"></span></a>
                   </div>
                   </section>
               </div>
@@ -60,7 +60,7 @@
             <div class="collapsable-design__colors">
               <h3 class="collapsable-design__colors--title">colores</h3>
               <div clas="collapsable-design__colors--palettes">
-                <label class="palette" for="palette1">
+                <label class="palette palette-radio" for="palette1">
                   <input type="radio" name="palette" id="palette1" value="0" checked="" />
                   <ul class="palette__square palette-1">
                     <li class="palette__square--color color-1"></li>
@@ -69,7 +69,7 @@
                   </ul>
                 </label>
 
-                <label class="palette" for="palette2">
+                <label class="palette palette-radio" for="palette2">
                   <input type="radio" name="palette" id="palette2" value="0" checked="" />
                   <ul class="palette__square palette-2">
                     <li class="palette__square--color color-1"></li>
@@ -78,7 +78,7 @@
                   </ul>
                 </label>
 
-                <label class="palette" for="palette3">
+                <label class="palette palette-radio" for="palette3">
                   <input type="radio" name="palette" id="palette3" value="0" checked="" />
                   <ul class="palette__square palette-3">
                     <li class="palette__square--color color-1"></li>
@@ -117,11 +117,12 @@
                 required
               />
               <label class="label" for="image">imagen de perfil</label>
+
               <div class="collapsable-fill__content--buttonPreview">
                 <input
                   class="button"
                   id="image"
-                  type="button"
+                  type="file"
                   value="Añadir imagen"
                   name="image"
                 />
@@ -135,6 +136,9 @@
                 type="email"
                 name="email"
                 placeholder="Ej: sally-hill@gmail.com"
+                value
+                onkeyup="changeEmail(event)"
+                onchange="changeEmail(event)"
                 required
               />
               <label class="label" for="telephone">teléfono</label>
@@ -143,7 +147,10 @@
                 id="telephone"
                 type="tel"
                 name="telephone"
-                placeholder="Ej: 555-55-55-55"
+                placeholder="Ej: 123456789"
+                value
+                onkeyup="changeTelephone(event)"
+                onchange="changeTelephone(event)"
                 required
               />
               <label class="label" for="linkedin">linkedin</label>
@@ -152,7 +159,10 @@
                 id="linkedin"
                 type="url"
                 name="linkedin"
-                placeholder="Ej: linkedin.com/in/sally.hill"
+                placeholder="Ej: sally.hill"
+                value
+                onkeyup="changeLinkedin(event)"
+                onchange="changeLinkedin(event)"
               />
               <label class="label" for="github">github</label>
               <input
@@ -160,7 +170,10 @@
                 id="github"
                 type="url"
                 name="github"
-                placeholder="Ej: @sally-hill"
+                placeholder="Ej: sally-hill"
+                value
+                onkeyup="changeGit(event)"
+                onchange="changeGit(event)"
               />
             </div>
           </section>

@@ -2,149 +2,116 @@
 
 .wrap {
   // @media all and(min-width: 768px){
-    height: 100%;
+  height: 100%;
 }
 
-.landing {
+.landing__main {
   background-color: $colorWhiteFour;
-  &__main {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @media all and (min-width: 768px) {
-      height: 100%;
-    }
-
-    &-header {
-      background-image: url("../images/tarjetas-molonas-medium.png");
-      background-size: cover;
-      width: 250px;
-      height: 63px;
-      margin-top: 21%;
-      margin-bottom: 7.72%;
-      @media all and (min-width: 768px) {
-        background-image: url("../images/tarjetas-molonas-large.png");
-        width: 419px;
-        height: 105px;
-        margin-top: 270px;
-        margin-bottom: 31px;
-      }
-    }
-    &-title {
-      color: $colorDullOrange;
-      font-size: 19.2px;
-      font-weight: 900;
-      font-family: $fontMerriweather;
-      margin-bottom: 1%;
-      //   width: 264.8px;
-      //   height: 38.4px;
-      @media all and (min-width: 768px) {
-        font-size: 24px;
-      }
-    }
-    &-subtitle {
-      text-align: center;
-      color: $colorDarkGreenBlue;
-      font-size: 12.8px;
-      font-weight: normal;
-      margin-bottom: 5%;
-      font-family: $fontOpenSans;
-      width: 264.8px;
-      @media all and (min-width: 768px) {
-        font-size: 16px;
-        margin-bottom: 27px;
-        width: 331px;
-      }
-    }
-    &-menu {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      border: solid 1.6px rgba(225, 115, 52, 0.21);
-      width: 268px;
-      height: 73.8px;
-      border-radius: 4px;
-      justify-items: center;
-      color: $colorDullOrange;
-      @media all and (min-width: 768px) {
-        width: 325px;
-        height: 86px;
-      }
-      &-icon1,
-      &-icon2,
-      &-icon3 {
-        font-size: 22.4px;
-        grid-row: 1/2;
-        margin-top: 10px;
-        @media all and (min-width: 768px) {
-          font-size: 28px;
-        }
-      }
-      &-word1,
-      &-word2,
-      &-word3 {
-        color: $colorGunMetal;
-        font-size: 12.8px;
-        font-family: $fontOpenSans;
-        @media all and (min-width: 768px) {
-          font-size: 16px;
-        }
-      }
-    }
-    &-button {
-      position: relative;
-      background-color: $colorDirtyBlue;
-      width: 129px;
-      height: 42px;
-      border-radius: 21px;
-      margin-top: 8.42%;
-      margin-bottom: 6.55%;
-      text-align: center;
-      @media all and (min-width: 768px) {
-        margin-top: 186px;
-        margin-bottom: 59px;
-      }
-      &--start {
-        position: absolute;
-        color: $colorWhite;
-        font-size: 16px;
-        font-family: $fontOpenSans;
-        font-weight: 600;
-        transform: translate(-50%, 45%);
-        text-transform: uppercase;
-      }
-    }
-  }
-}
-.footer {
+  height: 87vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border-top: solid 1px $colorWhite-two;
-  padding: 20px 0px;
-  height: 110px;
-
-  @include tablet() {
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    height: 60px;
-    padding: 20px 40px;
+  justify-content: center;
+  @media all and (min-width: 768px) {
+    height: 100%;
   }
-
-  &__info {
+  &-header {
+    background-image: url("../images/tarjetas-molonas-medium.png");
+    background-size: cover;
+    width: 250px;
+    height: 63px;
+    margin-top: 21%;
+    margin-bottom: 7.72%;
+    @media all and (min-width: 768px) {
+      background-image: url("../images/tarjetas-molonas-large.png");
+      width: 419px;
+      height: 105px;
+      margin-top: 270px;
+      margin-bottom: 31px;
+    }
+  }
+  &-title {
+    color: $colorDullOrange;
+    font-size: 19.2px;
+    font-weight: 900;
+    font-family: $fontMerriweather;
+    margin-bottom: 1%;
+    //   width: 264.8px;
+    //   height: 38.4px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  &-subtitle {
+    text-align: center;
+    color: $colorDarkGreenBlue;
+    font-size: 12.8px;
+    font-weight: normal;
+    margin-bottom: 5%;
     font-family: $fontOpenSans;
-    color: $colorBrownishGrey;
-    opacity: 0.5;
-    font-size: 14px;
+    width: 264.8px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 27px;
+      width: 331px;
+    }
   }
-
-  &__logo {
-    width: 103px;
+  &-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid 1.6px rgba(225, 115, 52, 0.21);
+    width: 268px;
+    height: 73.8px;
+    border-radius: 4px;
+    justify-items: center;
+    color: $colorDullOrange;
+    @media all and (min-width: 768px) {
+      width: 325px;
+      height: 86px;
+    }
+    &-icon1,
+    &-icon2,
+    &-icon3 {
+      font-size: 22.4px;
+      grid-row: 1/2;
+      margin-top: 10px;
+      @media all and (min-width: 768px) {
+        font-size: 28px;
+      }
+    }
+    &-word1,
+    &-word2,
+    &-word3 {
+      color: $colorGunMetal;
+      font-size: 12.8px;
+      font-family: $fontOpenSans;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &-button {
+    position: relative;
+    background-color: $colorDirtyBlue;
+    width: 129px;
+    height: 42px;
+    border-radius: 21px;
+    margin-top: 8.42%;
+    margin-bottom: 6.55%;
+    text-align: center;
+    @media all and (min-width: 768px) {
+      margin-top: 186px;
+      margin-bottom: 59px;
+    }
+    &--start {
+      position: absolute;
+      color: $colorWhite;
+      font-size: 16px;
+      font-family: $fontOpenSans;
+      font-weight: 600;
+      transform: translate(-50%, 45%);
+      text-transform: uppercase;
+    }
   }
 }
-
-

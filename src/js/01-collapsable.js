@@ -16,7 +16,6 @@ function collapsableArrowDesign() {
   collapsableDesign.classList.toggle("collapsable-hidden");
   arrow1.classList.toggle("fa-chevron-up");
   arrow1.classList.toggle("fa-chevron-down");
-  borderHeader.classList.toggle("border-hidden");
 }
 // Collapsable Fill
 function collapsableArrowFill() {

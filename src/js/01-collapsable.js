@@ -1,4 +1,5 @@
 "use strict";
+
 const collapsableDesign = document.querySelector(".js-collapsable-design");
 const collapsableFill = document.querySelector(".js-collapsable-fill");
 const collapsableShare = document.querySelector(".js-collapsable-share");

@@ -1,5 +1,3 @@
-"use strict";
-
 //constantes
 //nombre
 const fullName = document.querySelector(".js-name");

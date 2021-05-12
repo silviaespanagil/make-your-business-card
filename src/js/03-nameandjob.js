@@ -1,6 +1,4 @@
 "use strict";
-//nombre y apellido .js-name(tarjeta) .js-nameInput (form)
-//cargo .js-jobTitle (tarjeta) .js-job (form)
 
 //constantes
 //nombre
@@ -32,3 +30,15 @@ function changeJob() {
 
 nameInput.addEventListener("keyup", changeNameData);
 jobInput.addEventListener("keyup", changeJob);
+
+//const nameValue = nameInput.value;
+
+/*function changeData(a, b, c) {
+  if (a === "") {
+    b.innerHTML = c;
+  } else {
+    b.innerHTML = a;
+  }
+}
+
+nameInput.addEventListener("keyup", changeData(nameValue, fullName, nameInput));*/

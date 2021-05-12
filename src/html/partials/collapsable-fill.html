@@ -27,6 +27,7 @@
         type="file"
         value="Añadir imagen"
         name="image"
+        required
       />
       <div class="square"></div>
       <!--<input class="square" id="image" type="input" name="square" />-->
@@ -59,10 +60,11 @@
     <input
       class="input"
       id="linkedin"
-      type="url"
+      type="text"
       name="linkedin"
       placeholder="Ej: sally.hill"
       value
+      required
       onkeyup="changeLinkedin(event)"
       onchange="changeLinkedin(event)"
     />
@@ -70,10 +72,11 @@
     <input
       class="input"
       id="github"
-      type="url"
+      type="text"
       name="github"
       placeholder="Ej: sally-hill"
       value
+      required
       onkeyup="changeGit(event)"
       onchange="changeGit(event)"
     />

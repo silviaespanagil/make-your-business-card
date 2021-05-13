@@ -46,9 +46,6 @@ function changeJob() {
   }
 }
 
-nameInput.addEventListener("keyup", changeNameData);
-jobInput.addEventListener("keyup", changeJob);
-
 //email
 function changeEmail(event) {
   let emailValue = event.target.value;

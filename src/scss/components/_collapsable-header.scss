@@ -11,12 +11,15 @@
   text-transform: uppercase;
   font-size: 1.125rem;
   padding: 10px 0px 10px 0px;
+
   .far {
     color: $colorDullOrange;
   }
+
   .fa-share-alt {
     color: $colorDullOrange;
   }
+
   &--title {
     margin-left: 10px;
     @include menu-title;
@@ -24,10 +27,11 @@
   .fa-chevron-down {
     cursor: pointer;
   }
-  .fa-chevron-up {
-    cursor: pointer;
-  }
 }
 .border-hidden {
   border-bottom: 1px solid $colorWhite-two;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
 }

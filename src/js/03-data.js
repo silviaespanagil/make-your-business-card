@@ -22,8 +22,8 @@ const baseUrlGitHub = "https://github.com/";
 const data = {
   name,
   job,
-  telephone,
   email,
+  phone,
   linkedin,
   github,
 };
@@ -57,10 +57,10 @@ function changeEmail(event) {
 
 //teléfono
 function changeTelephone(event) {
-  let telephoneValue = event.target.value;
+  let phoneValue = event.target.value;
 
   let buttonTelephone = document.querySelector(".js-buttonTel");
-  let userTelephone = baseTelephone + telephoneValue;
+  let userTelephone = baseTelephone + phoneValue;
   buttonTelephone.setAttribute("href", userTelephone);
 }
 //linkedin
@@ -73,13 +73,7 @@ function changeLinkedin(event) {
 }
 //github
 function changeGit(event) {
-  //console.log("changeGit", event);
-  //lo estoy haciendo capturando el valor del evento:
   let gitValue = event.target.value;
-  //console.log("gitValue", gitValue);
-  //se puede hacer buscando el elemento por id para obtener su valor:
-  //let gitInput = document.getElementById("github").value;
-  //console.log("gitInput", gitInput);
   let buttonGit = document.querySelector(".js-buttonGit");
   let userUrlProfileGithub = baseUrlGitHub + gitValue;
   buttonGit.setAttribute("href", userUrlProfileGithub);

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // Nombre y trabajo
 
 //constantes

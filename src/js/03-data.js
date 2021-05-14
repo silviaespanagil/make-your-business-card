@@ -2,9 +2,9 @@
 
 //constantes
 //nombre
-const fullName = document.querySelector(".js-name");
+/*
 const nameInput = document.querySelector(".js-nameInput");
-const nameDefault = "Camus Ollo Branco";
+
 //cargo
 const jobTitle = document.querySelector(".js-jobTitle");
 const jobInput = document.querySelector(".js-job");
@@ -16,35 +16,41 @@ const baseTelephone = "tel:";
 //linkedin
 const baseUrlLinkedin = "https://www.linkedin.com/in/";
 //github
-const baseUrlGitHub = "https://github.com/";
+const baseUrlGitHub = "https://github.com/";*/
 
 //objeto
 const data = {
-  name,
-  job,
-  email,
-  phone,
-  linkedin,
-  github,
+  name: "",
+  job: "",
+  email: "",
+  phone: "",
+  linkedin: "",
+  github: "",
 };
 
-function changeNameData() {
-  const nameValue = nameInput.value;
-  if (nameValue === "") {
-    fullName.innerHTML = nameDefault;
-  } else {
-    fullName.innerHTML = nameValue;
+const form = document.querySelector(".js-data");
+const previewName = document.querySelector(".js-name");
+const nameDefault = "Camus Ollo Branco";
+
+function dataForm(ev) {
+  const InputAttribute = ev.target.name;
+  const userValue = ev.target.value;
+
+  if (InputAttribute === "name") {
+    data.name = userValue;
+  } else if (InputAttribute === "job") {
+    data.job = userValue;
   }
 }
-
-function changeJob() {
+form.addEventListener("keyup", dataForm);
+/*function changeJob() {
   const jobValue = jobInput.value;
   if (jobValue === "") {
     jobTitle.innerHTML = jobDefault;
   } else {
     jobTitle.innerHTML = jobValue;
   }
-}
+}*/
 
 //email
 function changeEmail(event) {

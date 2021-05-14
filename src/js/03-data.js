@@ -84,7 +84,7 @@ form.addEventListener("keyup", handlerData);
   } else {
     jobTitle.innerHTML = jobValue;
   }
-}*/
+}
 
 //email
 function changeEmail(event) {
@@ -95,25 +95,10 @@ function changeEmail(event) {
   buttonEmail.setAttribute("href", userEmail);
 }
 
-//teléfono
-function changeTelephone(event) {
-  let phoneValue = event.target.value;
-
-  let buttonTelephone = document.querySelector(".js-buttonTel");
-  let userTelephone = baseTelephone + phoneValue;
-  buttonTelephone.setAttribute("href", userTelephone);
-}
 //linkedin
 function changeLinkedin(event) {
   let linkedinValue = event.target.value;
 
   let userUrlProfileLink = baseUrlLinkedin + linkedinValue;
   buttonLink.setAttribute("href", userUrlProfileLink);
-}
-//github
-function changeGit(event) {
-  let gitValue = event.target.value;
-
-  let userUrlProfileGithub = baseUrlGitHub + gitValue;
-  buttonGit.setAttribute("href", userUrlProfileGithub);
-}
+}*/

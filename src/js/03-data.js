@@ -1,14 +1,20 @@
-// Nombre y trabajo
-
 //constantes
+
+//formulario
+
+const form = document.querySelector(".js-data");
+
 //nombre
-/*
+
 const nameInput = document.querySelector(".js-nameInput");
+const previewName = document.querySelector(".js-name");
+const nameDefault = "Camus Ollo Branco";
 
 //cargo
-const jobTitle = document.querySelector(".js-jobTitle");
 const jobInput = document.querySelector(".js-job");
+const previewJob = document.querySelector(".js-jobTitle");
 const jobDefault = "Ser un perro bello";
+
 //email
 const baseEmail = "mailto:";
 //teléfono
@@ -16,7 +22,7 @@ const baseTelephone = "tel:";
 //linkedin
 const baseUrlLinkedin = "https://www.linkedin.com/in/";
 //github
-const baseUrlGitHub = "https://github.com/";*/
+const baseUrlGitHub = "https://github.com/";
 
 //objeto
 const data = {
@@ -28,27 +34,32 @@ const data = {
   github: "",
 };
 
-const form = document.querySelector(".js-data");
-const previewName = document.querySelector(".js-name");
-const nameDefault = "Camus Ollo Branco";
-
 function dataForm(ev) {
   const inputAttribute = ev.target.name;
   const userValue = ev.target.value;
+  data[inputAttribute] = userValue;
+  console.log(data);
+}
 
-  if (inputAttribute === "name") {
+function previewCard() {}
+function handlerData(ev) {
+  dataForm(ev);
+  previewCard();
+}
+
+form.addEventListener("keyup", dataForm);
+
+/* if (inputAttribute === "name") {
     data.name = userValue; //data.name (o cualquier data.atributo podría ser data [inputAttribute] porque son iguales. Entonces puedo quitar todos los ifses
   } else if (inputAttribute === "job") {
     data.job = userValue;
   }
-  return console.log(data.name);
 }
 function previewCard() {}
 function handlerData(ev) {
   dataForm(ev), previewCard();
 }
 
-form.addEventListener("keyup", dataForm);
 
 /*function changeJob() {
   function handlerData(){}

@@ -1,7 +1,4 @@
-//constantes
-
 //formulario
-
 const form = document.querySelector(".js-data");
 
 //nombre
@@ -40,6 +37,8 @@ const data = {
   github: "",
 };
 
+//funciones
+
 function dataForm(ev) {
   const inputAttribute = ev.target.name;
   const userValue = ev.target.value;
@@ -67,6 +66,7 @@ function handlerData(ev) {
   previewCard();
 }
 
+//evento
 form.addEventListener("keyup", handlerData);
 
 /* if (inputAttribute === "name") {

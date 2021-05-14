@@ -29,7 +29,7 @@
       <div class="card-wrapper">
         <section class= "preview">
               <div class="preview__container">
-                <button class="preview__reset">
+                <button class="preview__reset js-reset">
                   <span class="far fa-trash-alt"></span>
                   <span>Reset</span>
                 </button>
@@ -49,11 +49,11 @@
               </div>
         </section>
 
-        <form class="collapsable" action="" method="">
+        <form class="collapsable js-data" action="" method="">
           <div class="collapsable__header border-hidden">
             <i class="far fa-object-ungroup"></i>
             <h2 class="collapsable__header--title">Diseña</h2>
-            <i class="fas fa-chevron-up js-arrow1"></i>
+            <i class="fas fa-chevron-down js-arrow "></i>
           </div>
 
           <section class="collapsable-design js-collapsable-design">
@@ -93,15 +93,16 @@
           <div class="collapsable__header border-hidden">
             <i class="far fa-keyboard keyBoard"></i>
             <h2 class="collapsable__header--title">Rellena</h2>
-            <i class="fas fa-chevron-down js-arrow2"></i>
+            <i class="fas fa-chevron-down js-arrow arrow-rotate"></i>
           </div>
 
-          <section class="collapsable-fill js-collapsable-fill collapsable-hidden">
+          <section class="collapsable-fill js-collapsable-fill">
             <div class="collapsable-fill__content">
               <label class="label" for="name">nombre completo</label>
               <input
                 class="input js-nameInput"
                 id="name"
+                maxlength="14"
                 type="text"
                 name="name"
                 placeholder="Ej: Sally Jill"
@@ -111,6 +112,7 @@
               <input
                 class="input js-job"
                 id="job"
+                maxlength="20"
                 type="text"
                 name="job"
                 placeholder="Ej: Front-end unicorn"
@@ -124,7 +126,8 @@
                   id="image"
                   type="file"
                   value="Añadir imagen"
-                  name="image"
+                  name="photo"
+                  required
                 />
                 <div class="square"></div>
                 <!--<input class="square" id="image" type="input" name="square" />-->
@@ -137,8 +140,6 @@
                 name="email"
                 placeholder="Ej: sally-hill@gmail.com"
                 value
-                onkeyup="changeEmail(event)"
-                onchange="changeEmail(event)"
                 required
               />
               <label class="label" for="telephone">teléfono</label>
@@ -146,34 +147,30 @@
                 class="input"
                 id="telephone"
                 type="tel"
-                name="telephone"
+                name="phone"
                 placeholder="Ej: 123456789"
                 value
-                onkeyup="changeTelephone(event)"
-                onchange="changeTelephone(event)"
                 required
               />
               <label class="label" for="linkedin">linkedin</label>
               <input
                 class="input"
                 id="linkedin"
-                type="url"
+                type="text"
                 name="linkedin"
                 placeholder="Ej: sally.hill"
                 value
-                onkeyup="changeLinkedin(event)"
-                onchange="changeLinkedin(event)"
+                required
               />
               <label class="label" for="github">github</label>
               <input
                 class="input"
                 id="github"
-                type="url"
+                type="text"
                 name="github"
                 placeholder="Ej: sally-hill"
                 value
-                onkeyup="changeGit(event)"
-                onchange="changeGit(event)"
+                required
               />
             </div>
           </section>
@@ -181,10 +178,10 @@
           <div class="collapsable__header border-hidden">
             <i class="fas fa-share-alt"></i>
             <h2 class="collapsable__header--title">Comparte</h2>
-            <i class="fas fa-chevron-down js-arrow3"></i>
+            <i class="fas fa-chevron-down js-arrow arrow-rotate"></i>
           </div>
 
-          <section class="collapsable-share js-collapsable-share collapsable-hidden">
+          <section class="collapsable-share js-collapsable-share">
             <button class="collapsable-share__button">
               <i class="far fa-address-card"></i>
               <span class="collapsable-share__button--text">crear tarjeta</span>

@@ -33,17 +33,25 @@ const previewName = document.querySelector(".js-name");
 const nameDefault = "Camus Ollo Branco";
 
 function dataForm(ev) {
-  const InputAttribute = ev.target.name;
+  const inputAttribute = ev.target.name;
   const userValue = ev.target.value;
 
-  if (InputAttribute === "name") {
-    data.name = userValue;
-  } else if (InputAttribute === "job") {
+  if (inputAttribute === "name") {
+    data.name = userValue; //data.name (o cualquier data.atributo podría ser data [inputAttribute] porque son iguales. Entonces puedo quitar todos los ifses
+  } else if (inputAttribute === "job") {
     data.job = userValue;
   }
+  return console.log(data.name);
 }
+function previewCard() {}
+function handlerData(ev) {
+  dataForm(ev), previewCard();
+}
+
 form.addEventListener("keyup", dataForm);
+
 /*function changeJob() {
+  function handlerData(){}
   const jobValue = jobInput.value;
   if (jobValue === "") {
     jobTitle.innerHTML = jobDefault;

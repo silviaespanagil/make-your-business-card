@@ -5,7 +5,6 @@
 const form = document.querySelector(".js-data");
 
 //nombre
-
 const nameInput = document.querySelector(".js-nameInput");
 const previewName = document.querySelector(".js-name");
 const nameDefault = "Camus Ollo Branco";
@@ -16,13 +15,20 @@ const previewJob = document.querySelector(".js-jobTitle");
 const jobDefault = "Ser un perro bello";
 
 //email
-const baseEmail = "mailto:";
+const defaultEmail = "mailto:";
+const previewEmail = document.querySelector(".js-buttonEm");
+
 //teléfono
-const baseTelephone = "tel:";
+const defaultTelephone = "tel:";
+const previewTel = document.querySelector(".js-buttonTel");
+
 //linkedin
-const baseUrlLinkedin = "https://www.linkedin.com/in/";
+const defaultUrlLinkedin = "https://www.linkedin.com/in/";
+const previewLinkedIn = document.querySelector(".js-buttonLink");
+
 //github
-const baseUrlGitHub = "https://github.com/";
+const defaultUrlGitHub = "https://github.com/";
+const previewGit = document.querySelector(".js-buttonGit");
 
 //objeto
 const data = {
@@ -41,28 +47,37 @@ function dataForm(ev) {
   console.log(data);
 }
 
-function previewCard() {}
+function previewCard() {
+  previewName.innerHTML = data.name === "" ? nameDefault : data.name;
+  previewJob.innerHTML = data.job === "" ? jobDefault : data.job;
+  previewEmail.href =
+    data.email === "" ? defaultEmail : defaultEmail + data.email;
+  previewTel.href =
+    data.phone === "" ? defaultTelephone : defaultTelephone + data.phone;
+  previewLinkedIn.href =
+    data.linkedin === ""
+      ? defaultUrlLinkedin
+      : defaultUrlLinkedin + data.linkedin;
+  previewGit.href =
+    data.github === "" ? defaultUrlGitHub : defaultUrlGitHub + data.github;
+}
+
 function handlerData(ev) {
   dataForm(ev);
   previewCard();
 }
 
-form.addEventListener("keyup", dataForm);
+form.addEventListener("keyup", handlerData);
 
 /* if (inputAttribute === "name") {
-    data.name = userValue; //data.name (o cualquier data.atributo podría ser data [inputAttribute] porque son iguales. Entonces puedo quitar todos los ifses
+  data.name = userValue;}
+
   } else if (inputAttribute === "job") {
     data.job = userValue;
   }
 }
-function previewCard() {}
-function handlerData(ev) {
-  dataForm(ev), previewCard();
-}
 
-
-/*function changeJob() {
-  function handlerData(){}
+/*
   const jobValue = jobInput.value;
   if (jobValue === "") {
     jobTitle.innerHTML = jobDefault;
@@ -92,14 +107,13 @@ function changeTelephone(event) {
 function changeLinkedin(event) {
   let linkedinValue = event.target.value;
 
-  let buttonLink = document.querySelector(".js-buttonLink");
   let userUrlProfileLink = baseUrlLinkedin + linkedinValue;
   buttonLink.setAttribute("href", userUrlProfileLink);
 }
 //github
 function changeGit(event) {
   let gitValue = event.target.value;
-  let buttonGit = document.querySelector(".js-buttonGit");
+
   let userUrlProfileGithub = baseUrlGitHub + gitValue;
   buttonGit.setAttribute("href", userUrlProfileGithub);
 }

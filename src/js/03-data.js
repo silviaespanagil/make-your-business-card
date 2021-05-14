@@ -1,45 +1,83 @@
-/* eslint-disable */
+//formulario
+const form = document.querySelector(".js-data");
 
-// Nombre y trabajo
-
-//constantes
 //nombre
-const fullName = document.querySelector(".js-name");
 const nameInput = document.querySelector(".js-nameInput");
+const previewName = document.querySelector(".js-name");
 const nameDefault = "Camus Ollo Branco";
+
 //cargo
-const jobTitle = document.querySelector(".js-jobTitle");
 const jobInput = document.querySelector(".js-job");
+const previewJob = document.querySelector(".js-jobTitle");
 const jobDefault = "Ser un perro bello";
+
 //email
-const baseEmail = "mailto:";
+const defaultEmail = "mailto:";
+const previewEmail = document.querySelector(".js-buttonEm");
+
 //teléfono
-const baseTelephone = "tel:";
+const defaultTelephone = "tel:";
+const previewTel = document.querySelector(".js-buttonTel");
+
 //linkedin
-const baseUrlLinkedin = "https://www.linkedin.com/in/";
+const defaultUrlLinkedin = "https://www.linkedin.com/in/";
+const previewLinkedIn = document.querySelector(".js-buttonLink");
+
 //github
-const baseUrlGitHub = "https://github.com/";
+const defaultUrlGitHub = "https://github.com/";
+const previewGit = document.querySelector(".js-buttonGit");
 
 //objeto
 const data = {
-  name,
-  job,
-  telephone,
-  email,
-  linkedin,
-  github,
+  name: "",
+  job: "",
+  email: "",
+  phone: "",
+  linkedin: "",
+  github: "",
 };
 
-function changeNameData() {
-  const nameValue = nameInput.value;
-  if (nameValue === "") {
-    fullName.innerHTML = nameDefault;
-  } else {
-    fullName.innerHTML = nameValue;
+//funciones
+
+function dataForm(ev) {
+  const inputAttribute = ev.target.name;
+  const userValue = ev.target.value;
+  data[inputAttribute] = userValue;
+  console.log(data);
+}
+
+function previewCard() {
+  previewName.innerHTML = data.name === "" ? nameDefault : data.name;
+  previewJob.innerHTML = data.job === "" ? jobDefault : data.job;
+  previewEmail.href =
+    data.email === "" ? defaultEmail : defaultEmail + data.email;
+  previewTel.href =
+    data.phone === "" ? defaultTelephone : defaultTelephone + data.phone;
+  previewLinkedIn.href =
+    data.linkedin === ""
+      ? defaultUrlLinkedin
+      : defaultUrlLinkedin + data.linkedin;
+  previewGit.href =
+    data.github === "" ? defaultUrlGitHub : defaultUrlGitHub + data.github;
+}
+
+function handlerData(ev) {
+  dataForm(ev);
+  previewCard();
+}
+
+//evento
+form.addEventListener("keyup", handlerData);
+
+/* if (inputAttribute === "name") {
+  data.name = userValue;}
+
+  } else if (inputAttribute === "job") {
+    data.job = userValue;
   }
 }
 
-function changeJob() {
+/*
   const jobValue = jobInput.value;
   if (jobValue === "") {
     jobTitle.innerHTML = jobDefault;
@@ -47,9 +85,6 @@ function changeJob() {
     jobTitle.innerHTML = jobValue;
   }
 }
-
-nameInput.addEventListener("keyup", changeNameData);
-jobInput.addEventListener("keyup", changeJob);
 
 //email
 function changeEmail(event) {
@@ -60,32 +95,10 @@ function changeEmail(event) {
   buttonEmail.setAttribute("href", userEmail);
 }
 
-//teléfono
-function changeTelephone(event) {
-  let telephoneValue = event.target.value;
-
-  let buttonTelephone = document.querySelector(".js-buttonTel");
-  let userTelephone = baseTelephone + telephoneValue;
-  buttonTelephone.setAttribute("href", userTelephone);
-}
 //linkedin
 function changeLinkedin(event) {
   let linkedinValue = event.target.value;
 
-  let buttonLink = document.querySelector(".js-buttonLink");
   let userUrlProfileLink = baseUrlLinkedin + linkedinValue;
   buttonLink.setAttribute("href", userUrlProfileLink);
-}
-//github
-function changeGit(event) {
-  //console.log("changeGit", event);
-  //lo estoy haciendo capturando el valor del evento:
-  let gitValue = event.target.value;
-  //console.log("gitValue", gitValue);
-  //se puede hacer buscando el elemento por id para obtener su valor:
-  //let gitInput = document.getElementById("github").value;
-  //console.log("gitInput", gitInput);
-  let buttonGit = document.querySelector(".js-buttonGit");
-  let userUrlProfileGithub = baseUrlGitHub + gitValue;
-  buttonGit.setAttribute("href", userUrlProfileGithub);
-}
+}*/

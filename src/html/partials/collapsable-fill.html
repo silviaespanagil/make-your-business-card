@@ -4,6 +4,7 @@
     <input
       class="input js-nameInput"
       id="name"
+      maxlength="14"
       type="text"
       name="name"
       placeholder="Ej: Sally Jill"
@@ -13,6 +14,7 @@
     <input
       class="input js-job"
       id="job"
+      maxlength="20"
       type="text"
       name="job"
       placeholder="Ej: Front-end unicorn"
@@ -26,7 +28,7 @@
         id="image"
         type="file"
         value="Añadir imagen"
-        name="image"
+        name="photo"
         required
       />
       <div class="square"></div>
@@ -40,8 +42,6 @@
       name="email"
       placeholder="Ej: sally-hill@gmail.com"
       value
-      onkeyup="changeEmail(event)"
-      onchange="changeEmail(event)"
       required
     />
     <label class="label" for="telephone">teléfono</label>
@@ -49,11 +49,9 @@
       class="input"
       id="telephone"
       type="tel"
-      name="telephone"
+      name="phone"
       placeholder="Ej: 123456789"
       value
-      onkeyup="changeTelephone(event)"
-      onchange="changeTelephone(event)"
       required
     />
     <label class="label" for="linkedin">linkedin</label>
@@ -65,8 +63,6 @@
       placeholder="Ej: sally.hill"
       value
       required
-      onkeyup="changeLinkedin(event)"
-      onchange="changeLinkedin(event)"
     />
     <label class="label" for="github">github</label>
     <input
@@ -77,8 +73,6 @@
       placeholder="Ej: sally-hill"
       value
       required
-      onkeyup="changeGit(event)"
-      onchange="changeGit(event)"
     />
   </div>
 </section>

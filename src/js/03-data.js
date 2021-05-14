@@ -4,12 +4,12 @@ const form = document.querySelector(".js-data");
 //nombre
 const nameInput = document.querySelector(".js-nameInput");
 const previewName = document.querySelector(".js-name");
-const nameDefault = "Camus Ollo Branco";
+const nameDefault = "Nombre Apellido";
 
 //cargo
 const jobInput = document.querySelector(".js-job");
 const previewJob = document.querySelector(".js-jobTitle");
-const jobDefault = "Ser un perro bello";
+const jobDefault = "Front-end developer";
 
 //email
 const defaultEmail = "mailto:";
@@ -28,7 +28,7 @@ const defaultUrlGitHub = "https://github.com/";
 const previewGit = document.querySelector(".js-buttonGit");
 
 //objeto
-const data = {
+let data = {
   name: "",
   job: "",
   email: "",
@@ -68,6 +68,22 @@ function handlerData(ev) {
 
 //evento
 form.addEventListener("keyup", handlerData);
+
+//reset form & cardpreview
+const resetButton = document.querySelector(".js-reset");
+function resetForm() {
+  form.reset();
+  data = {
+    name: "",
+    job: "",
+    email: "",
+    phone: "",
+    linkedin: "",
+    github: "",
+  };
+  previewCard();
+}
+resetButton.addEventListener("click", resetForm);
 
 /* if (inputAttribute === "name") {
   data.name = userValue;}

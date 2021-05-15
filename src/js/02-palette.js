@@ -1,6 +1,7 @@
 /*eslint-disable*/
 // "use strict";
 
+//variables selectoras de HTML
 const paletteElement = document.querySelector(".collapsable-design__colors");
 
 const cardDataNameColor = document.querySelector(".preview__card-data--name");
@@ -12,99 +13,65 @@ const cardDataSocialColor = document.querySelectorAll(
 );
 const cardDataBorderColor = document.querySelector(".preview__card-data");
 
-const cardDataPallet =
-  (cardDataNameColor, cardDataProfColor, cardDataBorderColor);
-const colorsPalette1 = (changeNameColor1, changeProfColor1, changeBorderColor1);
-const colorsPalette2 =
-  ("changeNameColor2", "changeProfColor2", "changeBorderColor2");
-const colorsPalette3 =
-  ("changeNameColor3", "changeProfColor3", "changeBorderColor3");
-console.log(colorsPalette1);
-function setColor(cardElement, addPallet, removePallet1, removePallet2) {
-  cardElement.classList.add(addPallet);
-  cardElement.classList.remove(removePallet1, removePallet2);
-}
+//variables agrupadas de selectores y colores
+const cardDataPallet = [
+  cardDataNameColor,
+  cardDataProfColor,
+  cardDataBorderColor,
+  cardDataSocialColor,
+];
+const colorsPalette1 = [
+  "changeNameColor1",
+  "changeProfColor1",
+  "changeBorderColor1",
+  "changeSocialColor1",
+];
+const colorsPalette2 = [
+  "changeNameColor2",
+  "changeProfColor2",
+  "changeBorderColor2",
+  "changeSocialColor2",
+];
+const colorsPalette3 = [
+  "changeNameColor3",
+  "changeProfColor3",
+  "changeBorderColor3",
+  "changeSocialColor3",
+];
 
+//funcion para add/remove colores correctos
+function setColor(cardData, addPallete, removePallete1, removePallete2) {
+  for (let i = 0; i < cardData.length; i++) {
+    let cardElement = cardData[i];
+    //condicional que evalua si es un array de >1 elemento (para iconos sociales)
+    if (cardElement.length > 1) {
+      //add/remove for each para entrar en cada una de los iconos dentro de la lista
+      cardElement.forEach((element) => element.classList.add(addPallete[i]));
+      cardElement.forEach((element) =>
+        element.classList.remove(removePallete1[i], removePallete2[i])
+      );
+      //condicional para el resto de elementos
+    } else {
+      cardData[i].classList.add(addPallete[i]);
+      cardData[i].classList.remove(removePallete1[i], removePallete2[i]);
+    }
+  }
+}
+//funcion que aplica los colores por paletas, llamando la funcion setColor
 function changePaletteColor(event) {
   let target = event.target;
 
   switch (target.id) {
     case "palette1":
       setColor(cardDataPallet, colorsPalette1, colorsPalette2, colorsPalette3);
-
-      // cardDataProfColor.classList.add("changeProfColor1");
-      // cardDataProfColor.classList.remove(
-      //   "changeProfColor2",
-      //   "changeProfColor3"
-      // );
-
-      // cardDataBorderColor.classList.add("changeBorderColor1");
-      // cardDataBorderColor.classList.remove(
-      //   "changeBorderColor2",
-      //   "changeBorderColor3"
-      // );
-
-      cardDataSocialColor.forEach((element) =>
-        element.classList.add("changeSocialColor1")
-      );
-      cardDataSocialColor.forEach((element) =>
-        element.classList.remove("changeSocialColor2", "changeSocialColor3")
-      );
       break;
     case "palette2":
       setColor(cardDataPallet, colorsPalette2, colorsPalette1, colorsPalette3);
-      // cardDataNameColor.classList.add("changeNameColor2");
-      // cardDataNameColor.classList.remove(
-      //   "changeNameColor3",
-      //   "changeNameColor1"
-      // );
-
-      // cardDataProfColor.classList.add("changeProfColor2");
-      // cardDataProfColor.classList.remove(
-      //   "changeProfColor1",
-      //   "changeProfColor3"
-      // );
-
-      // cardDataBorderColor.classList.add("changeBorderColor2");
-      // cardDataBorderColor.classList.remove(
-      //   "changeBorderColor1",
-      //   "changeBorderColor3"
-      // );
-
-      cardDataSocialColor.forEach((element) =>
-        element.classList.add("changeSocialColor2")
-      );
-      cardDataSocialColor.forEach((element) =>
-        element.classList.remove("changeSocialColor1", "changeSocialColor3")
-      );
       break;
     case "palette3":
       setColor(cardDataPallet, colorsPalette3, colorsPalette1, colorsPalette2);
-      // cardDataNameColor.classList.add("changeNameColor3");
-      // cardDataNameColor.classList.remove(
-      //   "changeNameColor1",
-      //   "changeNameColor2"
-      // );
-
-      // cardDataProfColor.classList.add("changeProfColor3");
-      // cardDataProfColor.classList.remove(
-      //   "changeProfColor1",
-      //   "changeProfColor2"
-      // );
-
-      // cardDataBorderColor.classList.add("changeBorderColor3");
-      // cardDataBorderColor.classList.remove(
-      //   "changeBorderColor1",
-      //   "changeBorderColor2"
-      // );
-
-      cardDataSocialColor.forEach((element) =>
-        element.classList.add("changeSocialColor3")
-      );
-      cardDataSocialColor.forEach((element) =>
-        element.classList.remove("changeSocialColor1", "changeSocialColor2")
-      );
       break;
   }
 }
+
 paletteElement.addEventListener("change", changePaletteColor);

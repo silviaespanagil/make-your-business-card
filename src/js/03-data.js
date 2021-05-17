@@ -4,7 +4,7 @@ const form = document.querySelector(".js-data");
 //nombre
 const nameInput = document.querySelector(".js-nameInput");
 const previewName = document.querySelector(".js-name");
-const nameDefault = "Nombre Apellido";
+const nameDefault = "Nombre y Apellido";
 
 //cargo
 const jobInput = document.querySelector(".js-job");
@@ -70,8 +70,9 @@ function handlerData(ev) {
 }
 
 function resetForm() {
-  form.reset();
+  form.reset(); //esto limpia los inputs sin más
   data = {
+    //esto es para vaciar la tarjeta  y que quede por default
     name: "",
     job: "",
     email: "",

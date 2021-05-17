@@ -30,6 +30,7 @@
     text-transform: uppercase;
     line-height: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
 
   &__card {
@@ -58,8 +59,9 @@
       }
     }
     &-image {
+      background-size: cover;
+      background-position: center center;
       height: 200px;
-      object-fit: cover;
     }
     &-socials {
       display: flex;
@@ -81,48 +83,4 @@
       }
     }
   }
-}
-//Palette 1//
-.changeNameColor1 {
-  color: $colorDarkGreenBlue;
-}
-.changeProfColor1 {
-  color: $colorDirtyBlue;
-}
-.changeBorderColor1 {
-  border-left: 5px solid $colorDirtyBlue;
-}
-.changeSocialColor1 {
-  border: 2px solid $colorHospitalGreen;
-  color: $colorDarkGreenBlue;
-}
-
-//Palette 2//
-.changeNameColor2 {
-  color: $colorDriedBlood;
-}
-.changeProfColor2 {
-  color: $colorRustyRed;
-}
-.changeBorderColor2 {
-  border-left: 5px solid $colorRustyRed;
-}
-.changeSocialColor2 {
-  border: 2px solid $colorTomato;
-  color: $colorRustyRed;
-}
-
-//Palette 3//
-.changeNameColor3 {
-  color: $colorSlate;
-}
-.changeProfColor3 {
-  color: $colorFadedOrange;
-}
-.changeBorderColor3 {
-  border-left: 5px solid $colorFadedOrange;
-}
-.changeSocialColor3 {
-  border: 2px solid $colorLightGreyBlue;
-  color: $colorFadedOrange;
 }

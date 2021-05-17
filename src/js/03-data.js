@@ -38,6 +38,7 @@ let data = {
   phone: "",
   linkedin: "",
   github: "",
+  photo: "",
 };
 
 //funciones
@@ -79,6 +80,7 @@ function resetForm() {
     phone: "",
     linkedin: "",
     github: "",
+    photo: "",
   };
   previewCard();
 }

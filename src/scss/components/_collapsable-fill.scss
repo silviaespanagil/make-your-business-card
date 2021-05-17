@@ -36,6 +36,7 @@
         display: block;
         width: 140px;
         height: 30px;
+        padding: 5px;
         background-color: $colorDullOrange;
         border: none;
         border-radius: 3px;
@@ -45,8 +46,17 @@
         line-height: 20px;
         text-align: center;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+        cursor: pointer;
+      }
+      .action__hiddenField {
+        /* Ocultamos el input de tipo "file" porque no podemos 
+        darle los estilos que queremos */
+        display: none;
       }
       .square {
+        /*background-image: url("");*/
+        background-size: cover;
+        background-position: center center;
         display: inline-block;
         margin-left: 20px;
         width: 30px;

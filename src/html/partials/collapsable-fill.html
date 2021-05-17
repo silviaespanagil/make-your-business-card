@@ -21,18 +21,15 @@
       required
     />
     <label class="label" for="image">imagen de perfil</label>
-
     <div class="collapsable-fill__content--buttonPreview">
+      <label class="button" for="img-selector">Añadir imagen</label>
       <input
-        class="button"
-        id="image"
         type="file"
-        value="Añadir imagen"
-        name="photo"
-        required
+        name=""
+        id="img-selector"
+        class="action__hiddenField js__profile-upload-btn"
       />
-      <div class="square"></div>
-      <!--<input class="square" id="image" type="input" name="square" />-->
+      <div class="square js__profile-preview"></div>
     </div>
     <label class="label" for="email">email</label>
     <input

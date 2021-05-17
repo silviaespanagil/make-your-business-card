@@ -27,6 +27,9 @@ const previewLinkedIn = document.querySelector(".js-buttonLink");
 const defaultUrlGitHub = "https://github.com/";
 const previewGit = document.querySelector(".js-buttonGit");
 
+//reset
+const resetButton = document.querySelector(".js-reset");
+
 //objeto
 let data = {
   name: "",
@@ -66,11 +69,6 @@ function handlerData(ev) {
   previewCard();
 }
 
-//evento
-form.addEventListener("keyup", handlerData);
-
-//reset form & cardpreview
-const resetButton = document.querySelector(".js-reset");
 function resetForm() {
   form.reset();
   data = {
@@ -83,38 +81,7 @@ function resetForm() {
   };
   previewCard();
 }
+
+//eventos
+form.addEventListener("keyup", handlerData);
 resetButton.addEventListener("click", resetForm);
-
-/* if (inputAttribute === "name") {
-  data.name = userValue;}
-
-  } else if (inputAttribute === "job") {
-    data.job = userValue;
-  }
-}
-
-/*
-  const jobValue = jobInput.value;
-  if (jobValue === "") {
-    jobTitle.innerHTML = jobDefault;
-  } else {
-    jobTitle.innerHTML = jobValue;
-  }
-}
-
-//email
-function changeEmail(event) {
-  let emailValue = event.target.value;
-
-  let buttonEmail = document.querySelector(".js-buttonEm");
-  let userEmail = baseEmail + emailValue;
-  buttonEmail.setAttribute("href", userEmail);
-}
-
-//linkedin
-function changeLinkedin(event) {
-  let linkedinValue = event.target.value;
-
-  let userUrlProfileLink = baseUrlLinkedin + linkedinValue;
-  buttonLink.setAttribute("href", userUrlProfileLink);
-}*/

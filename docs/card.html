@@ -27,29 +27,58 @@
 
     <main class="main">
       <div class="card-wrapper">
-        <section class= "preview">
-              <div class="preview__container">
-                <button type="reset" class="preview__reset js-reset">
-                  <span class="far fa-trash-alt"></span>
-                  <span>Reset</span>
-                </button>
-                <section class= "preview__card">
-                  <div class="preview__card-data">
-                    <h2 class="preview__card-data--name js-name">Nombre Apellido</h2>
-                    <h3 class="preview__card-data--jobTitle js-jobTitle">Front-end developer</h3>
-                  </div>
-                  <img class="preview__card-image" src="./assets/images/card-pic.jpg" alt="Card Picture"></img>
-                  <div class="preview__card-socials">
-                      <a class="preview__card-socials--items js-buttonTel" href="" target="_blank" title="telephone"><span class="fas fa-mobile-alt"></span></a>
-                      <a class="preview__card-socials--items js-buttonEm" href="" target="_blank" title="email"><span class="far fa-envelope"></span></a>
-                      <a class="preview__card-socials--items js-buttonLink" href="" target="_blank" title="linkedin"><span class="fab fa-linkedin-in"></span></a>
-                      <a class="preview__card-socials--items js-buttonGit" href="" target="_blank" title="github"><span class="fab fa-github-alt"></span></a>
-                  </div>
-                </section>
+        <section class="preview">
+          <div class="preview__container">
+            <button type="reset" class="preview__reset js-reset">
+              <span class="far fa-trash-alt"></span>
+              <span>Reset</span>
+            </button>
+            <section class="preview__card">
+              <div class="preview__card-data">
+                <h2 class="preview__card-data--name js-name">Nombre Apellido</h2>
+                <h3 class="preview__card-data--jobTitle js-jobTitle">
+                  Front-end developer
+                </h3>
               </div>
+              <div
+                class="preview__card-image js__profile-image"
+                style="background-image: url(../assets/images/card-pic.jpg)"
+              ></div>
+              <div class="preview__card-socials">
+                <a
+                  class="preview__card-socials--items js-buttonTel"
+                  href=""
+                  target="_blank"
+                  title="telephone"
+                  ><span class="fas fa-mobile-alt"></span
+                ></a>
+                <a
+                  class="preview__card-socials--items js-buttonEm"
+                  href=""
+                  target="_blank"
+                  title="email"
+                  ><span class="far fa-envelope"></span
+                ></a>
+                <a
+                  class="preview__card-socials--items js-buttonLink"
+                  href=""
+                  target="_blank"
+                  title="linkedin"
+                  ><span class="fab fa-linkedin-in"></span
+                ></a>
+                <a
+                  class="preview__card-socials--items js-buttonGit"
+                  href=""
+                  target="_blank"
+                  title="github"
+                  ><span class="fab fa-github-alt"></span
+                ></a>
+              </div>
+            </section>
+          </div>
         </section>
 
-        <form class="collapsable js-data" action="" method="">
+        <form class="collapsable js-data" action="" method="" autocomplete="on">
           <div class="collapsable__header js-collapsable-header border-hidden">
             <i class="far fa-object-ungroup"></i>
             <h2 class="collapsable__header--title">Diseña</h2>
@@ -119,18 +148,15 @@
                 required
               />
               <label class="label" for="image">imagen de perfil</label>
-
               <div class="collapsable-fill__content--buttonPreview">
+                <label class="button" for="img-selector">Añadir imagen</label>
                 <input
-                  class="button"
-                  id="image"
                   type="file"
-                  value="Añadir imagen"
-                  name="photo"
-                  required
+                  name=""
+                  id="img-selector"
+                  class="action__hiddenField js__profile-upload-btn"
                 />
-                <div class="square"></div>
-                <!--<input class="square" id="image" type="input" name="square" />-->
+                <div class="square js__profile-preview"></div>
               </div>
               <label class="label" for="email">email</label>
               <input

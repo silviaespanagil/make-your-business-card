@@ -27,6 +27,20 @@ const previewLinkedIn = document.querySelector(".js-buttonLink");
 const defaultUrlGitHub = "https://github.com/";
 const previewGit = document.querySelector(".js-buttonGit");
 
+//photoCard
+const previewImg = document.querySelector(".js__profile-image");
+const defaultImg = previewImg.setAttribute(
+  "style",
+  "background-image: url(../assets/images/card-pic.jpg)"
+);
+
+//photoMini
+const previewMiniImg = document.querySelector(".js__profile-preview");
+//const defaultMiniImg = previewMiniImg.setAttribute(
+// "style",
+// "background-image: url(../assets/images/card-pic.//jpg)"
+//);
+
 //reset
 const resetButton = document.querySelector(".js-reset");
 
@@ -70,6 +84,14 @@ function handlerData(ev) {
   previewCard();
 }
 
+function resetImg() {
+  previewImg.setAttribute(
+    "style",
+    "background-image: url(../assets/images/card-pic.jpg)"
+  );
+  previewMiniImg.setAttribute("style", "background-image: url()");
+}
+
 function resetForm() {
   form.reset(); //esto limpia los inputs sin más
   data = {
@@ -83,6 +105,7 @@ function resetForm() {
     photo: "",
   };
   previewCard();
+  resetImg();
 }
 
 //eventos

@@ -9,21 +9,24 @@ const collapsableShare = document.querySelector(".js-collapsable-share");
 const arrow = document.querySelector(".js-arrow");
 const collapsableHeader = document.querySelectorAll(".js-collapsable-header");
 
-// Collapsable
-function collapsableArrow(a) {
-  a.classList.toggle("collapsable-hidden");
-  arrow.classList.toggle("arrow-rotate");
-}
+const collapsableTotal = [collapsableDesign, collapsableFill, collapsableShare];
 
-function handlerCollapsable() {
-  collapsableArrow(collapsableDesign);
-  collapsableArrow(collapsableFill);
-  collapsableArrow(collapsableShare);
+// Collapsable
+function collapsableArrow() {
+  /*for (let i = 0; collapsableTotal < i; i++) {
+    collapsableTotal[i].classList.toggle("collapsable-hidden");
+    arrow.classList.toggle("arrow-rotate");
+  }*/
+  if (collapsableDesign.classList.contains("collapsable-hidden")) {
+    collapsableFill.classList.remove("collapsable-hidden");
+    collapsableShare.classList.add("collapsable-hidden");
+  } else if (collapsableFill.classList.contains("collapsable-hidden")) {
+    collapsableDesign.classList.remove("collapsable-hidden");
+    collapsableShare.classList.add("collapsable-hidden");
+  }
 }
 
 // // Bucle para escuchar cada flecha dentro del colapsable header
-// for (const element of section) {
-//   arrow.addEventListener("click", handlerCollapsable);
-// }
-
-// //¿Cómo escuchamos el evento sobre el elemento header? ¿Con event.target, solo con el bucle...?
+for (const arrow of collapsableHeader) {
+  arrow.addEventListener("click", collapsableArrow);
+}

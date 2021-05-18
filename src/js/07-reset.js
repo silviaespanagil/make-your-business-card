@@ -7,7 +7,6 @@ function resetImg() {
 }
 
 function resetForm() {
-  form.reset(); //esto limpia los inputs sin más
   data = {
     //esto es para vaciar la tarjeta  y que quede por default
     name: "",
@@ -18,7 +17,12 @@ function resetForm() {
     github: "",
     photo: "",
   };
-  previewCard();
-  resetImg();
 }
-resetButton.addEventListener("click", resetForm);
+
+function handlerReset() {
+  resetForm();
+  form.reset(); //esto limpia los inputs sin más
+  previewCard(); //re-llama a la funcion preview card de data.js
+  resetImg(); //limpia la image
+}
+resetButton.addEventListener("click", handlerReset);

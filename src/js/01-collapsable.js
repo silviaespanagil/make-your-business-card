@@ -22,19 +22,15 @@ function collapsable(event) {
   sectionClick.classList.remove("collapsable-hidden");
 }
 
-/*function rotateArrow(event) {
+function rotateArrow(event) {
   const arrowClick = event.target;
-
-  if (sectionClick.classList.contains("collapsable-hidden")) {
-    arrowClick.classList.remove("arrow-rotate");
-  } else if (-----) {
-    arrowClick.classList.add("arrow-rotate");
-  }
-}*/
+  console.log(arrowClick);
+  arrowClick.classList.toggle("arrow-rotate");
+}
 
 function handlerCollapsable(event) {
   collapsable(event);
-  /*rotateArrow(event);*/
+  rotateArrow(event);
 }
 
 // Bucle para escuchar cada flecha

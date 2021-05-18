@@ -1,7 +1,7 @@
 function resetImg() {
   previewImg.setAttribute(
     "style",
-    "background-image: url(../images/card-pic.jpg)"
+    "background-image: url(../assets/images/card-pic.jpg)"
   );
   previewMiniImg.setAttribute("style", "background-image: url()");
 }
@@ -23,6 +23,9 @@ function handlerReset() {
   resetForm();
   form.reset(); //esto limpia los inputs sin más
   previewCard(); //re-llama a la funcion preview card de data.js
-  resetImg(); //limpia la image
+  resetImg(); //limpia la imagen
+  localStorage.clear("dataLocal");
 }
 resetButton.addEventListener("click", handlerReset);
+
+//añadir a reset.js un removeLocalStorage

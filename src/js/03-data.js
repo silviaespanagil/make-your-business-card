@@ -14,18 +14,22 @@ const previewJob = document.querySelector(".js-jobTitle");
 const jobDefault = "Front-end developer";
 
 //email
+const emailInput = document.querySelector(".js-email");
 const defaultEmail = "mailto:";
 const previewEmail = document.querySelector(".js-buttonEm");
 
 //teléfono
+const telephoneInput = document.querySelector(".js-telephone");
 const defaultTelephone = "tel:";
 const previewTel = document.querySelector(".js-buttonTel");
 
 //linkedin
+const linkedInInput = document.querySelector(".js-linkedin");
 const defaultUrlLinkedin = "https://www.linkedin.com/in/";
 const previewLinkedIn = document.querySelector(".js-buttonLink");
 
 //github
+const githubInput = document.querySelector(".js-github");
 const defaultUrlGitHub = "https://github.com/";
 const previewGit = document.querySelector(".js-buttonGit");
 
@@ -55,15 +59,14 @@ let data = {
   linkedin: "",
   github: "",
   photo: "",
+  palette: "",
 };
 
 //funciones
-
 function dataForm(ev) {
   const inputAttribute = ev.target.name;
   const userValue = ev.target.value;
   data[inputAttribute] = userValue;
-  console.log(data);
 }
 
 function previewCard() {

@@ -37,7 +37,7 @@ const previewGit = document.querySelector(".js-buttonGit");
 const previewImg = document.querySelector(".js__profile-image");
 const defaultImg = previewImg.setAttribute(
   "style",
-  "background-image: url(../assets/images/card-pic.jpg)"
+  "background-image: url('../images/card-pic.jpg')"
 );
 
 //photoMini

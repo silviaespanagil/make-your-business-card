@@ -35,10 +35,10 @@ const previewGit = document.querySelector(".js-buttonGit");
 
 //photoCard
 const previewImg = document.querySelector(".js__profile-image");
-const defaultImg = previewImg.setAttribute(
+/*const defaultImg = previewImg.setAttribute(
   "style",
   "background-image: url('../images/card-pic.jpg')"
-);
+);*/
 
 //photoMini
 const previewMiniImg = document.querySelector(".js__profile-preview");

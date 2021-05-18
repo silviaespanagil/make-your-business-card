@@ -32,8 +32,6 @@ function getLocalStorage() {
     githubInput.value = getlocalData.github;
 
     previewImg.value = getlocalData.photo;
-  } else {
-    return (getlocalData = []);
   }
 }
 

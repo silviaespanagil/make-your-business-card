@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable strict */
 //formulario
 const form = document.querySelector(".js-data");
 
@@ -87,7 +89,7 @@ function handlerData(ev) {
 function resetImg() {
   previewImg.setAttribute(
     "style",
-    "background-image: url(../assets/images/card-pic.jpg)"
+    "background-image: url(./assets/images/card-pic.jpg)"
   );
   previewMiniImg.setAttribute("style", "background-image: url()");
 }

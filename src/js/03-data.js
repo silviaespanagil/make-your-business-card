@@ -59,7 +59,7 @@ let data = {
   linkedin: "",
   github: "",
   photo: "",
-  palette: "",
+  palette: 1,
 };
 
 //funciones

@@ -10,7 +10,6 @@
   palette: "",
 };*/
 function setlocalHost() {
-  console.log(data);
   localStorage.setItem("dataLocal", JSON.stringify(data));
 }
 
@@ -32,6 +31,8 @@ function getLocalStorage() {
     githubInput.value = getlocalData.github;
 
     previewImg.value = getlocalData.photo;
+
+    // paletteSelector.value = getlocalData.palette;
   }
 }
 

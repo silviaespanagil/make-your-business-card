@@ -9,6 +9,7 @@ function resetImg() {
 function resetForm() {
   data = {
     //esto es para vaciar la tarjeta  y que quede por default
+    // palette: "",
     name: "",
     job: "",
     email: "",
@@ -18,12 +19,16 @@ function resetForm() {
     photo: "",
   };
 }
+function resetPalette() {
+  cardDataPallet.classList.remove("palcol1", "palcol2", "palcol3");
+}
 
 function handlerReset() {
   resetForm();
   form.reset(); //esto limpia los inputs sin más
   previewCard(); //re-llama a la funcion preview card de data.js
   resetImg(); //limpia la imagen
+  resetPalette();
   localStorage.clear("dataLocal");
 }
 resetButton.addEventListener("click", handlerReset);

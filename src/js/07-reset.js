@@ -1,8 +1,9 @@
 function resetImg() {
   previewImg.setAttribute(
     "style",
-    "background-image: url(../assets/images/card-pic.jpg)"
+    "background-image: url('./assets/images/card-pic.jpg')"
   );
+
   previewMiniImg.setAttribute("style", "background-image: url()");
 }
 
@@ -34,3 +35,4 @@ function handlerReset() {
 resetButton.addEventListener("click", handlerReset);
 
 //añadir a reset.js un removeLocalStorage
+resetImg();

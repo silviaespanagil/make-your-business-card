@@ -31,11 +31,12 @@ function getLocalStorage() {
     githubInput.value = getlocalData.github;
 
     previewImg.value = getlocalData.photo;
-
-    // paletteSelector.value = getlocalData.palette;
+    // guardo en el objeto data y repinto
+    data = getlocalData;
   }
+  previewCard();
+  previewImage();
 }
 
-form.addEventListener("change", setlocalHost);
 getLocalStorage();
-//previewCard(); no vuelve a  pintar los datos en el preview. :(
+// no vuelve a  pintar los datos en el preview. :(

@@ -79,7 +79,9 @@ function previewCard() {
 function handlerData(ev) {
   dataForm(ev);
   previewCard();
+  setlocalHost();
 }
 
 //eventos
 form.addEventListener("keyup", handlerData);
+resetImg();

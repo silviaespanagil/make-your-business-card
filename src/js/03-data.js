@@ -84,4 +84,3 @@ function handlerData(ev) {
 
 //eventos
 form.addEventListener("keyup", handlerData);
-resetImg();

@@ -30,3 +30,4 @@ function handlerReset() {
 resetButton.addEventListener("click", handlerReset);
 
 //añadir a reset.js un removeLocalStorage
+resetImg();

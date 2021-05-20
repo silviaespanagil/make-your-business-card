@@ -78,7 +78,12 @@
         </section>
 
 
-        <form class="collapsable js-data" action="" method="" autocomplete="on">
+        <form
+          class="collapsable js-data"
+          action=""
+          method="POST"
+          autocomplete="on"
+        >
           <div class="collapsable__header js-collapsable-header">
             <i class="far fa-object-ungroup"></i>
             <h2 class="collapsable__header--title">Diseña</h2>
@@ -90,7 +95,7 @@
               <h3 class="collapsable-design__colors--title">colores</h3>
               <div clas="collapsable-design__colors--palettes">
                 <label class="palette palette-radio" for="palette1">
-                  <input type="radio" name="palette" id="palette1" value="0" checked />
+                  <input type="radio" class="radio-class" name="palette" id="palette1" value="1" checked/>
                   <ul class="palette__square palette-1">
                     <li class="palette__square--color color-1"></li>
                     <li class="palette__square--color color-2"></li>
@@ -99,7 +104,7 @@
                 </label>
 
                 <label class="palette palette-radio" for="palette2">
-                  <input type="radio" name="palette" id="palette2" value="0" />
+                  <input type="radio" class="radio-class" name="palette" id="palette2" value="2" />
                   <ul class="palette__square palette-2">
                     <li class="palette__square--color color-1"></li>
                     <li class="palette__square--color color-2"></li>
@@ -108,7 +113,7 @@
                 </label>
 
                 <label class="palette palette-radio" for="palette3">
-                  <input type="radio" name="palette" id="palette3" value="0" />
+                  <input type="radio" class="radio-class" name="palette" id="palette3" value="3" />
                   <ul class="palette__square palette-3">
                     <li class="palette__square--color color-1"></li>
                     <li class="palette__square--color color-2"></li>
@@ -156,6 +161,7 @@
                   name=""
                   id="img-selector"
                   class="action__hiddenField js__profile-upload-btn"
+                  required
                 />
                 <div class="square js__profile-preview"></div>
               </div>
@@ -210,20 +216,29 @@
           </div>
 
           <section class="collapsable-share js-collapsable-share collapsable-hidden">
-            <button class="collapsable-share__button js-share-button">
-              <i class="far fa-address-card"></i>
+            <button class="collapsable-share__button js-button-create">
+              <i class="far fa-address-card" aria-hidden="true"></i>
               <span class="collapsable-share__button--text">crear tarjeta</span>
             </button>
 
-            <div class="collapsable-share__twitter js-link-share share-hidden">
+            <div class="collapsable-share__twitter js-sectionCreated collapsable-hidden">
               <h3 class="collapsable-share__twitter--title">La tarjeta ha sido creada</h3>
-              <a class="collapsable-share__twitter--link" href=""
-                >https://awesome-profile-card.com?id=A456DF0001</a
-              >
-              <button class="collapsable-share__twitter--button">
-                <i class="fab fa-twitter"></i>
-                <span>Compartir en twitter</span>
-              </button>
+              <a
+                class="collapsable-share__twitter--link js-link-create"
+                target="_blank"
+                href=""
+              ></a>
+              <a href="" class="collapsable-share__twitter--button js-twitter-button">
+                <i class="fab fa-twitter" aria-hidden="true"></i>Compartir en twitter
+              </a>
+            </div>
+            <div
+              class="collapsable-share__twitter js-sectionCreatedError collapsable-hidden"
+            >
+              <h3 class="collapsable-share__twitter--title">
+                Los datos no están bien completados
+              </h3>
+              <p class="collapsable-share__twitter--link js-message-error"></p>
             </div>
           </section>
 

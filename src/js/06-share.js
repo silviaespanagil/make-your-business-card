@@ -29,8 +29,9 @@ function handlerCreateCard(ev) {
       }
     });
 }
-/*
+
 buttonCreate.addEventListener("click", handlerCreateCard);
+/*
 const shareButton = document.querySelector(".js-share-button");
 
 function showLinkShare() {

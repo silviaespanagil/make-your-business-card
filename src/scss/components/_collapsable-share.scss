@@ -2,6 +2,7 @@
   color: $colorGunMetal;
   &__button {
     display: block;
+    cursor: pointer;
     margin: 20px auto 30px;
     color: $colorWhite;
     background: $colorDullOrange;
@@ -22,6 +23,7 @@
   &__line {
     border-bottom: 1px solid $colorWhite-two;
   }
+
   &__twitter {
     text-align: center;
     border-top: 1px solid $colorWhite-two;
@@ -64,6 +66,10 @@
       }
     }
   }
+}
+
+.collapsable-hidden {
+  display: none;
 }
 .share-hidden {
   display: none;

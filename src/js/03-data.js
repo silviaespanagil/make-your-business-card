@@ -44,7 +44,7 @@ const resetButton = document.querySelector(".js-reset");
 
 //objeto
 let data = {
-  palette: 1,
+  palette: "",
   name: "",
   job: "",
   email: "",

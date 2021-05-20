@@ -10,7 +10,7 @@ function resetImg() {
 function resetForm() {
   data = {
     //esto es para vaciar la tarjeta  y que quede por default
-    // palette: "",
+    palette: "",
     name: "",
     job: "",
     email: "",

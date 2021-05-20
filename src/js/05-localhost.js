@@ -12,9 +12,8 @@
 function setlocalHost() {
   localStorage.setItem("dataLocal", JSON.stringify(data));
 }
-
+let getlocalData = JSON.parse(localStorage.getItem("dataLocal"));
 function getLocalStorage() {
-  let getlocalData = JSON.parse(localStorage.getItem("dataLocal"));
   console.log(getlocalData);
 
   if (getlocalData != null) {
@@ -42,4 +41,5 @@ function getLocalStorage() {
 }
 
 getLocalStorage();
+
 // no vuelve a  pintar los datos en el preview. :(

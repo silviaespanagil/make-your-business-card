@@ -35,6 +35,7 @@ const previewGit = document.querySelector(".js-buttonGit");
 
 //photoCard
 const previewImg = document.querySelector(".js__profile-image");
+const defaultImg = "url('../images/card-pic.jpg')";
 
 //photoMini
 const previewMiniImg = document.querySelector(".js__profile-preview");
@@ -64,6 +65,7 @@ function dataForm(ev) {
 function previewCard() {
   previewName.innerHTML = data.name === "" ? nameDefault : data.name;
   previewJob.innerHTML = data.job === "" ? jobDefault : data.job;
+  previewImg.value = data.photo === "" ? defaultImg : data.photo;
   previewEmail.href =
     data.email === "" ? defaultEmail : defaultEmail + data.email;
   previewTel.href =

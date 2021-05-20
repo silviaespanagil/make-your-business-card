@@ -35,7 +35,7 @@
 
   &__card {
     width: 240px;
-    max-height: 329px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     background-color: $colorWhite;
@@ -67,7 +67,7 @@
     &-socials {
       display: flex;
       align-items: center;
-      padding: 10px 0 12px 20px;
+      padding: 13px 0 13px 20px;
 
       &--items {
         display: flex;

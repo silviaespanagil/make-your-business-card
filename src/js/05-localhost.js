@@ -30,12 +30,15 @@ function getLocalStorage() {
 
     githubInput.value = getlocalData.github;
 
+    paletteSelector.value = getlocalData.palette;
+
     previewImg.value = getlocalData.photo;
     // guardo en el objeto data y repinto
     data = getlocalData;
   }
   previewCard();
   previewImage();
+  prevewPalette();
 }
 
 getLocalStorage();

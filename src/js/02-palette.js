@@ -21,7 +21,19 @@ function changePaletteColor(event) {
       data["palette"] = 3;
       break;
   }
-  // setlocalHost();
+}
+function prevewPalette() {
+  let getStoragePalette = localStorage.getItem("dataLocal");
+  if (getStoragePalette === 1) {
+    cardDataPallet.classList.remove("palcol2", "palcol3");
+    cardDataPallet.classList.add("palcol1");
+  } else if (getStoragePalette === 2) {
+    cardDataPallet.classList.remove("palcol1", "palcol3");
+    cardDataPallet.classList.add("palcol2");
+  } else if (getStoragePalette === 3) {
+    cardDataPallet.classList.remove("palcol1", "palcol2");
+    cardDataPallet.classList.add("palcol3");
+  }
 }
 
 paletteElement.addEventListener("click", changePaletteColor);

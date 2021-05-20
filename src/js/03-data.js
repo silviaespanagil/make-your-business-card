@@ -84,7 +84,6 @@ function handlerData(ev) {
 
 //eventos
 form.addEventListener("keyup", handlerData);
-
 //submit form
 /*
 function handlerSubmitForm() {

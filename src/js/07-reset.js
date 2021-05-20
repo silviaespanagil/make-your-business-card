@@ -33,4 +33,3 @@ function handlerReset() {
   localStorage.clear("dataLocal");
 }
 resetButton.addEventListener("click", handlerReset);
-resetImg();

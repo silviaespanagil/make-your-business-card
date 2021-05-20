@@ -29,6 +29,8 @@ function getLocalStorage() {
 
     paletteSelector.value = getlocalData.palette;
 
+    console.log(paletteSelector.value);
+
     previewImg.value = getlocalData.photo;
     // guardo en el objeto data y repinto
     data = getlocalData;
@@ -39,5 +41,3 @@ function getLocalStorage() {
 }
 
 getLocalStorage();
-
-// no vuelve a  pintar los datos en el preview. :(

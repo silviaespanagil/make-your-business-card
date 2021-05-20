@@ -92,10 +92,3 @@ function handlerData(ev) {
 //eventos
 form.addEventListener("keyup", handlerData);
 imagePreview();
-//submit form
-/*
-function handlerSubmitForm() {
-  ev.preventDefault();
-}
-form.addEventListener("submit", handlerSubmitForm);
-*/

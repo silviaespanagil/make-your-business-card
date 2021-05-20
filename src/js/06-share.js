@@ -23,14 +23,15 @@ function handlerCreateCard(ev) {
         linkCreate.href = data.cardURL;
         sectionCreate.classList.remove("collapsable-hidden");
         errorCreate.classList.add("collapsable-hidden");
+        buttonCreate.classList.remove("button-share-click-error");
         buttonCreate.classList.add("button-share-click");
 
         buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${data.cardURL}&hashtags=${hashtagsTweet}`;
       } else {
-        errorMessage.innerHTML = `Revisa los siguientes campos:<br> ${data.error}`;
+        errorMessage.innerHTML = data.error;
         errorCreate.classList.remove("collapsable-hidden");
         sectionCreate.classList.add("collapsable-hidden");
-        buttonCreate.classList.add("button-share-click");
+        buttonCreate.classList.add("button-share-click-error");
       }
     });
 }
@@ -38,6 +39,5 @@ function handlerCreateCard(ev) {
 buttonCreate.addEventListener("click", handlerCreateCard);
 
 // Link para compartir en twitter
-const textTweet =
-  "Conoce mi tarjeta profesional para la semana de la empleabilidad de Adalab";
+const textTweet = "Conoce mi tarjeta de presentación";
 const hashtagsTweet = "adalab,frontend";

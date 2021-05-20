@@ -41,7 +41,6 @@
       font-family: $fontOpenSans;
       font-size: 0.7rem;
       font-weight: 600;
-      white-space: nowrap;
 
       @media (max-width: 340px) {
         font-size: 0.65rem;
@@ -70,4 +69,8 @@
 
 .button-share-click {
   background: $colorWhite-two;
+}
+
+.button-share-click-error {
+  background: $colorRustyRed;
 }

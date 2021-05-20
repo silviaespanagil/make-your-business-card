@@ -1,14 +1,3 @@
-//objeto
-/*let data = {
-  name: "",
-  job: "",
-  email: "",
-  phone: "",
-  linkedin: "",
-  github: "",
-  photo: "",
-  palette: "",
-};*/
 function setlocalHost() {
   localStorage.setItem("dataLocal", JSON.stringify(data));
 }
@@ -28,8 +17,6 @@ function getLocalStorage() {
     githubInput.value = getlocalData.github;
 
     paletteSelector.value = getlocalData.palette;
-
-    console.log(paletteSelector.value);
 
     previewImg.value = getlocalData.photo;
     // guardo en el objeto data y repinto

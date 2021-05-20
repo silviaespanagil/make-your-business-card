@@ -39,7 +39,7 @@
       display: block;
       color: $colorDullOrange;
       font-family: $fontOpenSans;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       font-weight: 600;
       white-space: nowrap;
 
@@ -48,13 +48,13 @@
       }
     }
     &--button {
+      display: inline-block;
       background: $colorAzure;
       color: white;
 
-      height: 30px;
-      padding: 0px 10px;
-      margin-top: 10px;
+      padding: 5px 10px;
       border-radius: 5px;
+      margin-top: 10px;
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.32);
 
       font-size: 0.875rem;
@@ -68,12 +68,6 @@
   }
 }
 
-.collapsable-hidden {
-  display: none;
-}
-.share-hidden {
-  display: none;
-}
 .button-share-click {
   background: $colorWhite-two;
 }

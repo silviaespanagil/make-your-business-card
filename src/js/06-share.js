@@ -3,6 +3,7 @@ const linkCreate = document.querySelector(".js-link-create");
 const sectionCreate = document.querySelector(".js-sectionCreated");
 const errorCreate = document.querySelector(".js-sectionCreatedError");
 const errorMessage = document.querySelector(".js-message-error");
+const buttonTwitter = document.querySelector(".js-twitter-button");
 
 function handlerCreateCard(ev) {
   ev.preventDefault();
@@ -22,23 +23,20 @@ function handlerCreateCard(ev) {
         linkCreate.href = data.cardURL;
         sectionCreate.classList.remove("collapsable-hidden");
         errorCreate.classList.add("collapsable-hidden");
+        buttonCreate.classList.add("button-share-click");
       } else {
         errorMessage.innerHTML = `Revisa los siguientes campos:<br> ${data.error}`;
         errorCreate.classList.remove("collapsable-hidden");
         sectionCreate.classList.add("collapsable-hidden");
+        buttonCreate.classList.add("button-share-click");
       }
     });
 }
 
 buttonCreate.addEventListener("click", handlerCreateCard);
-/*
-const shareButton = document.querySelector(".js-share-button");
 
-function showLinkShare() {
-  const linkShareSection = document.querySelector(".js-link-share");
-  linkShareSection.classList.remove("share-hidden");
-  shareButton.classList.add("button-share-click");
-}
-
-shareButton.addEventListener("click", showLinkShare);
-*/
+// Link para compartir en twitter
+const textTweet =
+  "Conoce mi tarjeta profesional para la semana dela empleabilidad de Adalab";
+const hashtagsTweet = "adalab, frontend";
+buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${urlTweet}&hashtags=${hashtagsTweet}`;

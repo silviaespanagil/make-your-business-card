@@ -14,8 +14,6 @@ function setlocalHost() {
 }
 let getlocalData = JSON.parse(localStorage.getItem("dataLocal"));
 function getLocalStorage() {
-  console.log(getlocalData);
-
   if (getlocalData != null) {
     nameInput.value = getlocalData.name;
 

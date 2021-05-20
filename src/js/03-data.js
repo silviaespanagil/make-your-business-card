@@ -51,7 +51,7 @@ let data = {
   phone: "",
   linkedin: "",
   github: "",
-  photo: "",
+  photo: "url('../images/card-pic.jpg')",
 };
 
 //funciones
@@ -76,6 +76,13 @@ function previewCard() {
     data.github === "" ? defaultUrlGitHub : defaultUrlGitHub + data.github;
 }
 
+function imagePreview() {
+  previewImg.setAttribute(
+    "style",
+    "background-image: url('./assets/images/card-pic.jpg')"
+  );
+}
+
 function handlerData(ev) {
   dataForm(ev);
   previewCard();
@@ -84,6 +91,7 @@ function handlerData(ev) {
 
 //eventos
 form.addEventListener("keyup", handlerData);
+imagePreview();
 //submit form
 /*
 function handlerSubmitForm() {

@@ -48,6 +48,7 @@ const resetButton = document.querySelector(".js-reset");
 
 //objeto
 let data = {
+  palette: 1,
   name: "",
   job: "",
   email: "",
@@ -88,3 +89,11 @@ function handlerData(ev) {
 
 //eventos
 form.addEventListener("keyup", handlerData);
+
+//submit form
+/*
+function handlerSubmitForm() {
+  ev.preventDefault();
+}
+form.addEventListener("submit", handlerSubmitForm);
+*/

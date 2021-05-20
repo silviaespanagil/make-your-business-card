@@ -1,19 +1,29 @@
 <section class="collapsable-share js-collapsable-share collapsable-hidden">
-  <button class="collapsable-share__button">
-    <i class="far fa-address-card"></i>
+  <button class="collapsable-share__button js-button-create">
+    <i class="far fa-address-card" aria-hidden="true"></i>
     <span class="collapsable-share__button--text">crear tarjeta</span>
   </button>
 
   <div class="collapsable-share__line"></div>
 
-  <div class="collapsable-share__twitter">
+  <div class="collapsable-share__twitter js-sectionCreated collapsable-hidden">
     <h3 class="collapsable-share__twitter--title">La tarjeta ha sido creada</h3>
-    <a class="collapsable-share__twitter--link" href=""
-      >https://awesome-profile-card.com?id=A456DF0001</a
-    >
+    <a
+      class="collapsable-share__twitter--link js-link-create"
+      target="_blank"
+      href=""
+    ></a>
     <button class="collapsable-share__twitter--button">
-      <i class="fab fa-twitter"></i>
+      <i class="fab fa-twitter" aria-hidden="true"></i>
       <span>Compartir en twitter</span>
     </button>
+  </div>
+  <div
+    class="collapsable-share__twitter js-sectionCreatedError collapsable-hidden"
+  >
+    <h3 class="collapsable-share__twitter--title">
+      Los datos no están bien completados
+    </h3>
+    <p class="collapsable-share__twitter--link js-message-error"></p>
   </div>
 </section>

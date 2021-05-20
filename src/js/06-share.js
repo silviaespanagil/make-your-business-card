@@ -39,4 +39,4 @@ buttonCreate.addEventListener("click", handlerCreateCard);
 const textTweet =
   "Conoce mi tarjeta profesional para la semana dela empleabilidad de Adalab";
 const hashtagsTweet = "adalab, frontend";
-buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${urlTweet}&hashtags=${hashtagsTweet}`;
+/*buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${urlTweet}&hashtags=${hashtagsTweet}`;*/

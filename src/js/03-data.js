@@ -14,34 +14,30 @@ const previewJob = document.querySelector(".js-jobTitle");
 const jobDefault = "Front-end developer";
 
 //email
+const emailInput = document.querySelector(".js-email");
 const defaultEmail = "mailto:";
 const previewEmail = document.querySelector(".js-buttonEm");
 
 //teléfono
+const telephoneInput = document.querySelector(".js-telephone");
 const defaultTelephone = "tel:";
 const previewTel = document.querySelector(".js-buttonTel");
 
 //linkedin
+const linkedInInput = document.querySelector(".js-linkedin");
 const defaultUrlLinkedin = "https://www.linkedin.com/in/";
 const previewLinkedIn = document.querySelector(".js-buttonLink");
 
 //github
+const githubInput = document.querySelector(".js-github");
 const defaultUrlGitHub = "https://github.com/";
 const previewGit = document.querySelector(".js-buttonGit");
 
 //photoCard
 const previewImg = document.querySelector(".js__profile-image");
-const defaultImg = previewImg.setAttribute(
-  "style",
-  "background-image: url(../assets/images/card-pic.jpg)"
-);
 
 //photoMini
 const previewMiniImg = document.querySelector(".js__profile-preview");
-//const defaultMiniImg = previewMiniImg.setAttribute(
-// "style",
-// "background-image: url(../assets/images/card-pic.//jpg)"
-//);
 
 //reset
 const resetButton = document.querySelector(".js-reset");
@@ -56,15 +52,14 @@ let data = {
   linkedin: "",
   github: "",
   photo: "",
+  palette: 1,
 };
 
 //funciones
-
 function dataForm(ev) {
   const inputAttribute = ev.target.name;
   const userValue = ev.target.value;
   data[inputAttribute] = userValue;
-  console.log(data);
 }
 
 function previewCard() {
@@ -85,6 +80,7 @@ function previewCard() {
 function handlerData(ev) {
   dataForm(ev);
   previewCard();
+  setlocalHost();
 }
 
 //eventos

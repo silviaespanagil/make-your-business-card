@@ -23,17 +23,20 @@ function changePaletteColor(event) {
   }
   setlocalHost();
 }
-function prevewPalette() {
-  if (getlocalData.palette === 1) {
+function previewPalette() {
+  if (data.palette === 1) {
     cardDataPallet.classList.remove("palcol2", "palcol3");
     cardDataPallet.classList.add("palcol1");
-  } else if (getlocalData.palette === 2) {
+    // paletteSelector.checked = true;
+  } else if (data.palette === 2) {
     cardDataPallet.classList.remove("palcol1", "palcol3");
     cardDataPallet.classList.add("palcol2");
-  } else if (getlocalData.palette === 3) {
+    // paletteSelector.checked = true;
+  } else if (data.palette === 3) {
     cardDataPallet.classList.remove("palcol1", "palcol2");
     cardDataPallet.classList.add("palcol3");
+    // paletteSelector.checked = true;
   }
 }
-// getLocalStorage();
+
 paletteElement.addEventListener("click", changePaletteColor);

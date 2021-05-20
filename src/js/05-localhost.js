@@ -37,7 +37,7 @@ function getLocalStorage() {
   }
   previewCard();
   previewImage();
-  prevewPalette();
+  previewPalette();
 }
 
 getLocalStorage();

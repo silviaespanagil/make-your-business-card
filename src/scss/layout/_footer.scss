@@ -5,13 +5,13 @@
   justify-content: space-between;
   border-top: 1px solid #a2deaf;
   padding: 20px 0px;
-  height: 110px;
+  height: 13vh;
 
   @include tablet() {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    height: 60px;
+    height: 7vh;
     padding: 20px 40px;
   }
 

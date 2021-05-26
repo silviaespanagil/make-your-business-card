@@ -50,12 +50,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    /*border: 2px solid#ff1495;*/
     background: white;
     box-shadow: 2px 2px 4px rgba($color: black, $alpha: 0.7);
     width: 268px;
     height: 73.8px;
-    /*border-radius: 4px;*/
     justify-items: center;
     color: #bd1010;
     @include tablet {
@@ -84,18 +82,12 @@
     }
   }
   &-button {
-    position: relative;
     background-color: #438792;
     width: 129px;
     height: 42px;
     border-radius: 21px;
-    margin-top: 60px;
-    /*margin-bottom: 6.55%;*/
+    margin-top: 50px;
     text-align: center;
-    /*@include tablet {
-      margin-top: 186px;
-      margin-bottom: 30px;
-    }*/
     &--start {
       position: absolute;
       color: $colorWhite;

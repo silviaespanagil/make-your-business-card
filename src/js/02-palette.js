@@ -2,6 +2,9 @@ const cardDataPallet = document.querySelector(".preview__card");
 const paletteElement = document.querySelector(".collapsable-design__colors");
 const paletteSelector = document.querySelector(".radio-class");
 
+const paletteChecked = document.querySelector(".input-checked");
+paletteChecked.checked = true;
+
 function changePaletteColor(event) {
   let target = event.target;
   cardDataPallet.classList.remove("palcol1", "palcol2", "palcol3");

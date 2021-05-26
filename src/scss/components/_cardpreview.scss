@@ -1,11 +1,12 @@
 .preview {
-  background: linear-gradient($colorSilver, $colorPaleGrey);
+  background: #a2deaf;
   padding: 38px 0 40px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   @include tablet() {
     width: 100%;
-    min-height: 750px;
+    min-height: 710px;
     margin: 20px 40px 20px 30px;
     border-radius: 6px;
   }
@@ -14,14 +15,13 @@
   }
   &__container {
     @include tablet() {
-      padding-top: 173px;
       grid-row-start: 1;
     }
   }
   &__reset {
     width: 75px;
     height: 30px;
-    background-color: $colorSilver;
+    background-color: #a2deaf;
     border: 1px solid $colorWhite;
     border-radius: 15px;
     color: $colorGunMetal;
@@ -59,7 +59,6 @@
       }
     }
     &-image {
-      /*background-image: url("../images/card-pic.jpg");*/
       background-size: cover;
       background-position: center center;
       height: 200px;

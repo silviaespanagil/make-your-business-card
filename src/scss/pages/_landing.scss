@@ -1,44 +1,30 @@
-@import "../core/variables";
-
-.wrap {
-  // @media all and(min-width: 768px){
-  height: 100%;
-}
-
 .landing__main {
-  background-color: $colorWhiteFour;
-  height: 87vh;
+  background-color: $colorWhite;
+  height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media all and (min-width: 768px) {
-    height: 100%;
+  @include tablet {
+    height: 92vh;
   }
+
   &-header {
-    background-image: url("../images/tarjetas-molonas-medium.png");
-    background-size: cover;
-    width: 250px;
-    height: 63px;
-    margin-top: 21%;
-    margin-bottom: 7.72%;
-    @media all and (min-width: 768px) {
-      background-image: url("../images/tarjetas-molonas-large.png");
-      width: 419px;
-      height: 105px;
-      margin-top: 270px;
-      margin-bottom: 31px;
+    .logo {
+      width: 200px;
+      margin: 30px;
+      @include tablet {
+        margin-top: 100px;
+      }
     }
   }
   &-title {
-    color: $colorDullOrange;
-    font-size: 19.2px;
-    font-weight: 900;
-    font-family: $fontMerriweather;
+    color: #e95626;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 1%;
-    //   width: 264.8px;
-    //   height: 38.4px;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 24px;
     }
   }
@@ -50,7 +36,7 @@
     margin-bottom: 5%;
     font-family: $fontOpenSans;
     width: 264.8px;
-    @media all and (min-width: 768px) {
+    @include tablet {
       font-size: 16px;
       margin-bottom: 27px;
       width: 331px;
@@ -60,13 +46,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    border: solid 1.6px rgba(225, 115, 52, 0.21);
+    /*border: 2px solid#ff1495;*/
+    background: white;
+    box-shadow: 2px 2px 4px rgba($color: black, $alpha: 0.7);
     width: 268px;
     height: 73.8px;
-    border-radius: 4px;
+    /*border-radius: 4px;*/
     justify-items: center;
-    color: $colorDullOrange;
-    @media all and (min-width: 768px) {
+    color: #bd1010;
+    @include tablet {
       width: 325px;
       height: 86px;
     }
@@ -75,8 +63,8 @@
     &-icon3 {
       font-size: 22.4px;
       grid-row: 1/2;
-      margin-top: 10px;
-      @media all and (min-width: 768px) {
+      margin-top: 15px;
+      @include tablet {
         font-size: 28px;
       }
     }
@@ -86,21 +74,21 @@
       color: $colorGunMetal;
       font-size: 12.8px;
       font-family: $fontOpenSans;
-      @media all and (min-width: 768px) {
+      @include tablet {
         font-size: 16px;
       }
     }
   }
   &-button {
     position: relative;
-    background-color: $colorDirtyBlue;
+    background-color: #438792;
     width: 129px;
     height: 42px;
     border-radius: 21px;
     margin-top: 8.42%;
     margin-bottom: 6.55%;
     text-align: center;
-    @media all and (min-width: 768px) {
+    @include tablet {
       margin-top: 186px;
       margin-bottom: 59px;
     }

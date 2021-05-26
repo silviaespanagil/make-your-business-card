@@ -20,6 +20,7 @@ function resetForm() {
     photo: "",
   };
 }
+
 function resetPalette() {
   cardDataPallet.classList.remove("palcol1", "palcol2", "palcol3");
 }

@@ -11,8 +11,12 @@
 
   &-header {
     .logo {
-      width: 160px;
+      background-image: url("../images/pruebas-feas-base.svg");
+      background-size: cover;
+      width: 150px;
+      height: 200px;
       margin: 30px;
+
       @include tablet {
         margin-top: 100px;
       }

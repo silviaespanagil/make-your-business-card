@@ -1,17 +1,17 @@
 .landing__main {
   background-color: $colorWhite;
-  height: 88vh;
+  height: 87vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @include tablet {
-    height: 92vh;
-  }
+  /*@include tablet {
+    height: 100%;
+  }*/
 
   &-header {
     .logo {
-      width: 200px;
+      width: 160px;
       margin: 30px;
       @include tablet {
         margin-top: 100px;
@@ -85,11 +85,11 @@
     width: 129px;
     height: 42px;
     border-radius: 21px;
-    margin-top: 8.42%;
-    margin-bottom: 6.55%;
+    margin-top: 60px;
+    /*margin-bottom: 6.55%;*/
     text-align: center;
     @include tablet {
-      margin-top: 186px;
+      /*margin-top: 186px;*/
       margin-bottom: 59px;
     }
     &--start {

@@ -1,39 +1,32 @@
 "use strict";
 
-// Constantes Secciones Colapsables
-const collapsableDesign = document.querySelector(".js-collapsable-design");
-const collapsableFill = document.querySelector(".js-collapsable-fill");
-const collapsableShare = document.querySelector(".js-collapsable-share");
-
+// Constante Secciones Colapsables
+const collapsableSections = document.querySelectorAll(".js-collapsable");
 // Constante Flechas
 const arrows = document.querySelectorAll(".js-arrow");
+// Constante Cabeceras
+const headers = document.querySelectorAll(".js-collapsable-header");
 
-// Funcion collapsable
-function collapsable(event) {
-  // constante seccion que debe descollapsar
-  const sectionClick = event.target.parentElement.nextElementSibling;
-
-  // Añade clase hidden para ocultar todas las secciones
-  collapsableDesign.classList.add("collapsable-hidden");
-  collapsableFill.classList.add("collapsable-hidden");
-  collapsableShare.classList.add("collapsable-hidden");
-
-  // Quita la clase hidden a la clase clickada para mostrarse
-  sectionClick.classList.remove("collapsable-hidden");
+function handleCollapsibles(event) {
+  const sectionClick = event.currentTarget.nextElementSibling;
+  const headerClick = event.currentTarget;
+  for (const collapsableSection of collapsableSections) {
+    if (collapsableSection === sectionClick) {
+      collapsableSection.classList.toggle("collapsable-hidden");
+      for (const arrow of arrows) {
+        if (arrow.parentNode === headerClick) {
+          arrow.classList.toggle("rotate");
+        } else {
+          arrow.classList.remove("rotate");
+        }
+      }
+    } else {
+      collapsableSection.classList.add("collapsable-hidden");
+    }
+  }
 }
 
-/*function rotateArrow(event) {
-  const arrowClick = event.target;
-  console.log(arrowClick);
-  arrowClick.classList.toggle("arrow-rotate");
-}*/
-
-function handlerCollapsable(event) {
-  collapsable(event);
-  /*rotateArrow(event);*/
-}
-
-// Bucle para escuchar cada flecha
-for (let arrow of arrows) {
-  arrow.addEventListener("click", handlerCollapsable);
+// Bucle para escuchar cada header
+for (let header of headers) {
+  header.addEventListener("click", handleCollapsibles);
 }

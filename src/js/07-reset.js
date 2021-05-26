@@ -31,5 +31,7 @@ function handlerReset() {
   resetImg(); //limpia la imagen
   resetPalette();
   localStorage.clear("dataLocal");
+  location.reload();
 }
+
 resetButton.addEventListener("click", handlerReset);

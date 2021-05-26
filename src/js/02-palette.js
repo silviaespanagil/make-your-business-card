@@ -8,6 +8,9 @@ const palettesRadios = document.querySelectorAll(".radio-class");
 //     paletteRadio.setAttribute("checked", "true");
 //   }
 // }
+const paletteChecked = document.querySelector(".input-checked");
+paletteChecked.checked = true;
+
 function changePaletteColor(event) {
   let target = event.target;
 

@@ -19,17 +19,12 @@ function writeImage() {
   setlocalHost();
 }
 
-/*if ($("img").attr("src") == "default.png") {
-  alert("please change image");
-}*/
-
 function previewImage() {
-  console.log(data.photo);
-  if (profileImage.src === "") {
+  if (data.photo === "") {
+    profileImage.src = "./assets/images/card-pic.jpg";
+  } else {
     profileImage.src = `${data.photo}`;
     profilePreview.src = `${data.photo}`;
-  } else {
-    profileImage.src = "./assets/images/card-pic.jpg";
   }
 }
 

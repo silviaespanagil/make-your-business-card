@@ -10,7 +10,8 @@ We're sure you have and if you haven´t now you are thinking you should.
 
 As requested for our client "Adalab" we have developed a web application that allows any interested person to create and share a customize business card.
 
-<img src="https://user-images.githubusercontent.com/81619759/119475543-88c9f380-bd4d-11eb-9c80-5773ec929ee3.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/81619759/119809919-da0ceb00-bee5-11eb-837f-317dc6619124.png" width="400"/> <img src="https://user-images.githubusercontent.com/81619759/119810599-7931e280-bee6-11eb-8691-1cfcc6e1ffe9.png" width="464"/> 
+<div align="center"> <img  src="https://user-images.githubusercontent.com/81619759/119810285-2eb06600-bee6-11eb-8a0b-250ff586464a.png" width="300"/></div>
 
 ## Requirements 📋
 
@@ -45,7 +46,12 @@ For the development of this web application we started the layout and after it w
 
 We divided the functions according to their purposes. This allowed us to work in parallel so that the development was faster and thus we could be able to comply with the times proposed by our Scrumt without compromising the requirements asked by the Product Owner.
 
-👁️‍🗨️If you are curious here is our HTML, Sass and Javascript partials 👁️‍🗨️
+All the functions were later refactored so they were clearer,  for  this we used  some ternary operators and hadling functions to trigger events.
+
+👁️‍🗨️If you are curious this is how we divided our JS code 👁️‍🗨️
+  
+ ![image](https://user-images.githubusercontent.com/81619759/119811123-070dcd80-bee7-11eb-904e-d13d0bf4fd67.png)
+
 
 ## Want to clone our repository? 🐑🐑
 

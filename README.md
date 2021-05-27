@@ -11,7 +11,7 @@ We're sure you have and if you haven´t now you are thinking you should.
 As requested for our client "Adalab" we have developed a web application that allows any interested person to create and share a customize business card.
 
 <img src="https://user-images.githubusercontent.com/81619759/119809919-da0ceb00-bee5-11eb-837f-317dc6619124.png" width="300"/> <img src="https://user-images.githubusercontent.com/81619759/119810599-7931e280-bee6-11eb-8691-1cfcc6e1ffe9.png" width="350"/> 
-<div align="center"> <img  src="https://user-images.githubusercontent.com/81619759/119810285-2eb06600-bee6-11eb-8a0b-250ff586464a.png" width="300"/></div>
+<img  src="https://user-images.githubusercontent.com/81619759/119810285-2eb06600-bee6-11eb-8a0b-250ff586464a.png" width="300"/>
 
 ## Requirements 📋
 

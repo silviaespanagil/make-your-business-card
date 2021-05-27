@@ -88,10 +88,10 @@
             <div class="collapsable-design__colors">
               <h3 class="collapsable-design__colors--title">colores</h3>
               <div clas="collapsable-design__colors--palettes">
-                <label class="palette palette-radio" for="palette1">
+                <label class="palette palette-radio label1" for="palette1">
                   <input
                     type="radio"
-                    class="radio-class input-checked"
+                    class="radio-class js-paletteDefault"
                     name="palette"
                     id="palette1"
                     value="1"
@@ -103,7 +103,7 @@
                   </ul>
                 </label>
 
-                <label class="palette palette-radio" for="palette2">
+                <label class="palette palette-radio label2" for="palette2">
                   <input
                     type="radio"
                     class="radio-class"
@@ -118,7 +118,7 @@
                   </ul>
                 </label>
 
-                <label class="palette palette-radio" for="palette3">
+                <label class="palette palette-radio label3" for="palette3">
                   <input
                     type="radio"
                     class="radio-class"
@@ -147,7 +147,7 @@
             class="collapsable-fill js-collapsable js-collapsable-fill collapsable-hidden"
           >
             <div class="collapsable-fill__content">
-              <label class="label" for="name">nombre completo</label>
+              <label class="label" for="name">nombre completo *</label>
               <input
                 class="input js-nameInput"
                 id="name"
@@ -157,7 +157,7 @@
                 placeholder="Ej: Sally Jill"
                 required
               />
-              <label class="label" for="job">puesto</label>
+              <label class="label" for="job">puesto *</label>
               <input
                 class="input js-job"
                 id="job"
@@ -167,7 +167,7 @@
                 placeholder="Ej: Front-end unicorn"
                 required
               />
-              <label class="label" for="image">imagen de perfil</label>
+              <label class="label" for="image">imagen de perfil *</label>
               <div class="collapsable-fill__content--buttonPreview">
                 <label class="button" for="img-selector">Añadir imagen</label>
                 <input
@@ -179,7 +179,7 @@
                 />
                 <div class="square js__profile-preview"></div>
               </div>
-              <label class="label" for="email">email</label>
+              <label class="label" for="email">email *</label>
               <input
                 class="input js-email"
                 id="email"
@@ -189,7 +189,7 @@
                 value
                 required
               />
-              <label class="label" for="telephone">teléfono</label>
+              <label class="label" for="telephone">teléfono *</label>
               <input
                 class="input js-telephone"
                 id="telephone"
@@ -199,7 +199,7 @@
                 value
                 required
               />
-              <label class="label" for="linkedin">linkedin</label>
+              <label class="label" for="linkedin">linkedin *</label>
               <input
                 class="input js-linkedin"
                 id="linkedin"
@@ -209,7 +209,7 @@
                 value
                 required
               />
-              <label class="label" for="github">github</label>
+              <label class="label" for="github">github *</label>
               <input
                 class="input js-github"
                 id="github"
@@ -242,7 +242,8 @@
             </button>
 
             <div class="collapsable-share__twitter js-sectionCreated collapsable-hidden">
-              <h3 class="collapsable-share__twitter--title">La tarjeta ha sido creada</h3>
+              <h3 class="collapsable-share__twitter--title">Tu tarjeta ha sido creada</h3>
+              <p class="message-share">Haz click en el enlace para ver tu tarjeta:</p>
               <a
                 class="collapsable-share__twitter--link js-link-create"
                 target="_blank"
@@ -260,7 +261,7 @@
               class="collapsable-share__twitter js-sectionCreatedError collapsable-hidden"
             >
               <h3 class="collapsable-share__twitter--title">
-                Completa todos los campos:
+                Completa todos los campos marcados con *
               </h3>
               <p class="collapsable-share__twitter--link js-message-error"></p>
             </div>

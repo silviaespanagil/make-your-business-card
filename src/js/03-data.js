@@ -85,10 +85,19 @@ function imagePreview() {
   );
 }
 
+function allowButton() {
+  buttonCreate.removeAttribute("disabled", "disabled");
+  errorCreate.classList.add("collapsable-hidden");
+  sectionCreate.classList.add("collapsable-hidden");
+  buttonCreate.classList.remove("button-share-click-error");
+  buttonCreate.classList.remove("button-share-click");
+}
+
 function handlerData(ev) {
   dataForm(ev);
   previewCard();
   setlocalHost();
+  allowButton();
 }
 
 //eventos

@@ -25,13 +25,17 @@ function handlerCreateCard(ev) {
         errorCreate.classList.add("collapsable-hidden");
         buttonCreate.classList.remove("button-share-click-error");
         buttonCreate.classList.add("button-share-click");
-
         buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${data.cardURL}&hashtags=${hashtagsTweet}`;
       } else {
         errorMessage.innerHTML = data.error;
         errorCreate.classList.remove("collapsable-hidden");
         sectionCreate.classList.add("collapsable-hidden");
         buttonCreate.classList.add("button-share-click-error");
+      }
+      // Resetear botón crear tarjeta cuando se colapsa seccion share (NO FUNCIONA)
+      const collapsableShare = document.querySelector(".js-collapsable-share");
+      if (collapsableShare.classList.contains("collapsable-hidden")) {
+        location.reload();
       }
     });
 }

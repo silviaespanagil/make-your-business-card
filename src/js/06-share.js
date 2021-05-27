@@ -38,6 +38,14 @@ function handlerCreateCard(ev) {
     });
 }
 
+function allowButton() {
+  buttonCreate.removeAttribute("disabled", "disabled");
+  errorCreate.classList.add("collapsable-hidden");
+  sectionCreate.classList.add("collapsable-hidden");
+  buttonCreate.classList.remove("button-share-click-error");
+  buttonCreate.classList.remove("button-share-click");
+}
+
 buttonCreate.addEventListener("click", handlerCreateCard);
 
 // Link para compartir en twitter

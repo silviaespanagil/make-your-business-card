@@ -1,124 +1,76 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Web App: Business Card
 
-# Adalab web starter kit
+## _Create your own business card online and share it with the world_
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+Hello there!
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+Have you even been to an online event and wanted to share a little bit of yourself in order to improve your contact network? As a
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+We're sure you have and if you haven´t now you are thinking you should.
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+As requested for our client "Adalab" we have developed a web application that allows any interested person to create and share a customize business card.
 
-## Guía de inicio rápido
+<img src="https://user-images.githubusercontent.com/81619759/119809919-da0ceb00-bee5-11eb-837f-317dc6619124.png" width="300"/> <img src="https://user-images.githubusercontent.com/81619759/119810599-7931e280-bee6-11eb-8691-1cfcc6e1ffe9.png" width="350"/> 
+<img  src="https://user-images.githubusercontent.com/81619759/119810285-2eb06600-bee6-11eb-8a0b-250ff586464a.png" width="260"/>
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+## Requirements 📋
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+Here are our client requirements:
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+- User must start it journey in a simple but descriptive landing page.
+- The app must allow the user to choose between three diferent color palettes .
+- There must be a form to fill in which all the fields are mandatory
+- As the user completes the form a preview of the card must be visible in the right side of the app
+- The user's information must be stored in a local storage so that if they leave the page, when they return they do not have to complete it again.
+- On the preview area there must be a reset button in case that the user wants to start over. This button resets all content and local storage.
+- When the user finishes the card he will be able to collect a link with the card.
+- As the card is created a new button to share the card on Twitter must be created.
 
-```bash
+## Tech 💻
+
+Starring ⭐:
+[Adalab Web Starter Kit](https://github.com/Adalab/adalab-web-starter-kit) - An amazing template that allowed us to use a local host, SASS, HTML Template Engines and gulp. For more information you may visit [the Kit repository](https://github.com/Adalab/adalab-web-starter-kit)
+
+<sub>[Node.js](https://nodejs.org/) and Gulp are required <sub/>
+
+### Built with 🔨
+
+- Visual Code Studio: as code editor
+- HTML
+- SASS
+- Javascript
+
+## Development ⌨️
+
+For the development of this web application we started the layout and after it was completed we started developing all the needed functions.
+
+We divided the functions according to their purposes. This allowed us to work in parallel so that the development was faster and thus we could be able to comply with the times proposed by our Scrumt without compromising the requirements asked by the Product Owner.
+
+All the functions were later refactored so they were clearer,  for  this we used  some ternary operators and hadling functions to trigger events.
+
+👁️‍🗨️If you are curious this is how we divided our JS code 👁️‍🗨️
+  
+ ![image](https://user-images.githubusercontent.com/81619759/119811123-070dcd80-bee7-11eb-904e-d13d0bf4fd67.png)
+
+
+## Want to clone our repository? 🐑🐑
+
+Please do! We believe sharing is caring. Remember that to run this proyect you will need to:
+
+1. Install dependencies. You will only have to do this once.
+
+```sh
 npm install
 ```
 
-### Pasos para arrancar el proyecto:
+2. Start the proyect. This must be done everytime you code and will open a local host that will update in real time
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
-
-```bash
+```sh
 npm start
 ```
 
-Este comando:
+3. If in doubt go check [Adalab Web Starter Kit](https://github.com/Adalab/adalab-web-starter-kit) detailed instructions
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+## License
 
-Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
-
-### Pasos para publicar el proyecto en GitHub Pages:
-
-Para generar tu página para producción ejecuta el comando:
-
-```bash
-npm run docs
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
-
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+MIT

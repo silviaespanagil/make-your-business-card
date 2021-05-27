@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable strict */
 //formulario
 const form = document.querySelector(".js-data");
 
@@ -33,10 +31,6 @@ const githubInput = document.querySelector(".js-github");
 const defaultUrlGitHub = "https://github.com/";
 const previewGit = document.querySelector(".js-buttonGit");
 
-//photoCard
-const previewImg = document.querySelector(".js__profile-image");
-const defaultImg = "url('../images/card-pic.jpg')";
-
 //photoMini
 const previewMiniImg = document.querySelector(".js__profile-preview");
 
@@ -45,14 +39,14 @@ const resetButton = document.querySelector(".js-reset");
 
 //objeto
 let data = {
-  palette: "",
+  palette: "1",
   name: "",
   job: "",
   email: "",
   phone: "",
   linkedin: "",
   github: "",
-  photo: "url('../images/card-pic.jpg')",
+  photo: "",
 };
 
 //funciones
@@ -65,7 +59,6 @@ function dataForm(ev) {
 function previewCard() {
   previewName.innerHTML = data.name === "" ? nameDefault : data.name;
   previewJob.innerHTML = data.job === "" ? jobDefault : data.job;
-  previewImg.value = data.photo === "" ? defaultImg : data.photo;
   previewEmail.href =
     data.email === "" ? defaultEmail : defaultEmail + data.email;
   previewTel.href =
@@ -78,13 +71,6 @@ function previewCard() {
     data.github === "" ? defaultUrlGitHub : defaultUrlGitHub + data.github;
 }
 
-function imagePreview() {
-  previewImg.setAttribute(
-    "style",
-    "background-image: url('./assets/images/card-pic.jpg')"
-  );
-}
-
 function handlerData(ev) {
   dataForm(ev);
   previewCard();
@@ -93,4 +79,3 @@ function handlerData(ev) {
 
 //eventos
 form.addEventListener("keyup", handlerData);
-imagePreview();

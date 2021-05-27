@@ -26,6 +26,8 @@ function handlerCreateCard(ev) {
         buttonCreate.classList.remove("button-share-click-error");
         buttonCreate.classList.add("button-share-click");
         buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${data.cardURL}&hashtags=${hashtagsTweet}`;
+
+        buttonCreate.setAttribute("disabled", "disabled");
       } else {
         //errorMessage.innerHTML = data.error;
         errorCreate.classList.remove("collapsable-hidden");
@@ -38,6 +40,14 @@ function handlerCreateCard(ev) {
         location.reload();
       }
     });
+}
+
+function allowButton() {
+  buttonCreate.removeAttribute("disabled", "disabled");
+  errorCreate.classList.add("collapsable-hidden");
+  sectionCreate.classList.add("collapsable-hidden");
+  buttonCreate.classList.remove("button-share-click-error");
+  buttonCreate.classList.remove("button-share-click");
 }
 
 buttonCreate.addEventListener("click", handlerCreateCard);

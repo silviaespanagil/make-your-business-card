@@ -75,6 +75,7 @@ function handlerData(ev) {
   dataForm(ev);
   previewCard();
   setlocalHost();
+  allowButton();
 }
 
 //eventos

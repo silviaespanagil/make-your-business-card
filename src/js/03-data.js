@@ -31,9 +31,6 @@ const githubInput = document.querySelector(".js-github");
 const defaultUrlGitHub = "https://github.com/";
 const previewGit = document.querySelector(".js-buttonGit");
 
-//photoMini
-const previewMiniImg = document.querySelector(".js__profile-preview");
-
 //reset
 const resetButton = document.querySelector(".js-reset");
 

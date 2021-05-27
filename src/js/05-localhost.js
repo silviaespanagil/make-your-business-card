@@ -1,21 +1,6 @@
 function setlocalHost() {
   localStorage.setItem("dataLocal", JSON.stringify(data));
 }
-// function paletteRadios() {
-//   const palettesRadios = document.querySelectorAll(".radio-class");
-//   for (const paletteRadio of palettesRadios) {
-//     if (paletteSelector.value === 2) {
-//       paletteRadio.setAttribute("checked", "true");
-//     }
-//   }
-// }
-
-//   const paletteElements = document.querySelectorAll(".radio-class");
-//   for (const paletteElement of paletteElements) {
-//     if (paletteElement.value === getlocalData.palette) {
-//       paletteElement.checked = true;
-//     }
-const checkedPalette = document.querySelector(".radio-class :checked");
 
 let getlocalData = JSON.parse(localStorage.getItem("dataLocal"));
 function getLocalStorage() {
@@ -41,7 +26,6 @@ function getLocalStorage() {
   previewCard();
   previewImage();
   previewPalette();
-  // paletteRadios();
 }
 
 getLocalStorage();

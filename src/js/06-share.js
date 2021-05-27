@@ -4,14 +4,18 @@ const sectionCreate = document.querySelector(".js-sectionCreated");
 const errorCreate = document.querySelector(".js-sectionCreatedError");
 const errorMessage = document.querySelector(".js-message-error");
 const buttonTwitter = document.querySelector(".js-twitter-button");
-
+let errorHtml = "";
 function handlerCreateCard(ev) {
   ev.preventDefault();
+
   for (let info in data) {
-    console.log(data[info]);
+    if (data[info] === "") {
+      errorHtml += ` |${info}| `;
+    }
+    errorMessage.innerHTML = errorHtml;
   }
-  if (data.name === "") {
-    errorMessage.innerHTML = "Rellena el campo con un nombre.";
+  /*if (data.name === "") {
+    errorMessage.innerHTML = errorHtml;
     errorCreate.classList.remove("collapsable-hidden");
   }
   if (data.job === "") {
@@ -37,37 +41,36 @@ function handlerCreateCard(ev) {
   if (data.photo === "") {
     errorMessage.innerHTML = "Tienes que subir una foto.";
     errorCreate.classList.remove("collapsable-hidden");
-  } else {
-    const url = "https://awesome-profile-cards.herokuapp.com/card";
+  } else {*/
+  const url = "https://awesome-profile-cards.herokuapp.com/card";
 
-    fetch(url, {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success === true) {
-          linkCreate.innerHTML = data.cardURL;
-          linkCreate.href = data.cardURL;
-          sectionCreate.classList.remove("collapsable-hidden");
-          errorCreate.classList.add("collapsable-hidden");
-          buttonCreate.classList.remove("button-share-click-error");
-          buttonCreate.classList.add("button-share-click");
+  fetch(url, {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.success === true) {
+        linkCreate.innerHTML = data.cardURL;
+        linkCreate.href = data.cardURL;
+        sectionCreate.classList.remove("collapsable-hidden");
+        errorCreate.classList.add("collapsable-hidden");
+        buttonCreate.classList.remove("button-share-click-error");
+        buttonCreate.classList.add("button-share-click");
 
-          buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${data.cardURL}&hashtags=${hashtagsTweet}`;
+        buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${data.cardURL}&hashtags=${hashtagsTweet}`;
 
-          buttonCreate.setAttribute("disabled", "disabled");
-        } else {
-          //errorMessage.innerHTML = data.error;
-          errorCreate.classList.remove("collapsable-hidden");
-          sectionCreate.classList.add("collapsable-hidden");
-          buttonCreate.classList.add("button-share-click-error");
-        }
-      });
-  }
+        buttonCreate.setAttribute("disabled", "disabled");
+      } else {
+        //errorMessage.innerHTML = data.error;
+        errorCreate.classList.remove("collapsable-hidden");
+        sectionCreate.classList.add("collapsable-hidden");
+        buttonCreate.classList.add("button-share-click-error");
+      }
+    });
 }
 
 function allowButton() {

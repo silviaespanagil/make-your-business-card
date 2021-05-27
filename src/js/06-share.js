@@ -58,5 +58,5 @@ function allowButton() {
 buttonCreate.addEventListener("click", handlerCreateCard);
 
 // Link para compartir en twitter
-const textTweet = "Conoce mi tarjeta de presentación";
-const hashtagsTweet = "adalab,frontend";
+const textTweet = "Conoce mi tarjeta de presentación:";
+const hashtagsTweet = "openToWork,frontend";

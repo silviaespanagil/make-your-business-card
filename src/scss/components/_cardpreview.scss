@@ -59,9 +59,10 @@
       }
     }
     &-image {
+      height: 200px;
+      width: 240px;
       background-size: cover;
       background-position: center center;
-      height: 200px;
     }
     &-socials {
       display: flex;

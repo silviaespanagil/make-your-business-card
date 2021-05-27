@@ -3,6 +3,7 @@ function setlocalHost() {
 }
 
 let getlocalData = JSON.parse(localStorage.getItem("dataLocal"));
+
 function getLocalStorage() {
   if (getlocalData != null) {
     nameInput.value = getlocalData.name;
@@ -11,8 +12,6 @@ function getLocalStorage() {
     telephoneInput.value = getlocalData.phone;
     linkedInInput.value = getlocalData.linkedin;
     githubInput.value = getlocalData.github;
-    profilePreview.src = getlocalData.photo;
-    profileImage.src = getlocalData.photo;
     // guardo en el objeto data y repinto
     data = getlocalData;
   }

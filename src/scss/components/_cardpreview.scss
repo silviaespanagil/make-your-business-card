@@ -61,6 +61,8 @@
     &-image {
       height: 200px;
       width: 240px;
+      background-size: cover;
+      background-position: center center;
     }
     &-socials {
       display: flex;

@@ -1,11 +1,9 @@
 //photoCard
-const previewImg = document.querySelector(".js__profile-image");
-const defaultImg = "url('../images/card-pic.jpg')";
-
 const fr = new FileReader();
 const fileField = document.querySelector(".js__profile-upload-btn");
 const profileImage = document.querySelector(".js__profile-image");
 const profilePreview = document.querySelector(".js__profile-preview");
+const defaultImg = "../assets/images/card-pic.jpg";
 
 function getImage(e) {
   const myFile = e.currentTarget.files[0];
@@ -21,10 +19,10 @@ function writeImage() {
 
 function previewImage() {
   if (data.photo === "") {
-    profileImage.src = "./assets/images/card-pic.jpg";
+    profileImage.style.backgroundImage = `url(${defaultImg})`;
   } else {
-    profileImage.src = `${data.photo}`;
-    profilePreview.src = `${data.photo}`;
+    profileImage.style.backgroundImage = `url(${data.photo})`;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
   }
 }
 

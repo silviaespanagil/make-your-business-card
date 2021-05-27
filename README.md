@@ -4,7 +4,7 @@
 
 Hello there!
 
-Have you even been to an online event and wanted to share a little bit of yourself in order to improve your contact network? As a
+Have you ever been to an online event and wanted to share a little bit of yourself in order to improve your contact network? 
 
 We're sure you have and if you haven´t now you are thinking you should.
 

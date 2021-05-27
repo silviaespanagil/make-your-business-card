@@ -3,7 +3,7 @@ const fr = new FileReader();
 const fileField = document.querySelector(".js__profile-upload-btn");
 const profileImage = document.querySelector(".js__profile-image");
 const profilePreview = document.querySelector(".js__profile-preview");
-const defaultImg = "../assets/images/card-pic.jpg";
+const defaultImg = "./assets/images/card-pic.jpg";
 
 function getImage(e) {
   const myFile = e.currentTarget.files[0];

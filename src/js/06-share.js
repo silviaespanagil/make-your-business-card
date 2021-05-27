@@ -28,7 +28,7 @@ function handlerCreateCard(ev) {
 
         buttonTwitter.href = `https://twitter.com/intent/tweet?text=${textTweet}&url=${data.cardURL}&hashtags=${hashtagsTweet}`;
       } else {
-        errorMessage.innerHTML = data.error;
+        //errorMessage.innerHTML = data.error;
         errorCreate.classList.remove("collapsable-hidden");
         sectionCreate.classList.add("collapsable-hidden");
         buttonCreate.classList.add("button-share-click-error");

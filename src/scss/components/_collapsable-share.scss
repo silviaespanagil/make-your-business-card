@@ -69,8 +69,17 @@
 
 .button-share-click {
   background: #a0c0cf;
+  cursor: not-allowed;
 }
 
 .button-share-click-error {
   background: #bd1010;
+  cursor: pointer;
+}
+.message-share {
+  font-size: 12px;
+  line-height: 20px;
+  color: $colorDarkGreenBlue;
+  font-family: $fontOpenSans;
+  margin-bottom: 7px;
 }

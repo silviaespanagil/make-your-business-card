@@ -2,7 +2,7 @@
 
 ## _Create your own business card online and share it with the world_
 
-Hello there!
+¡Hola mundo!
 
 Have you ever been to an online event and wanted to share a little bit of yourself in order to improve your contact network? 
 
